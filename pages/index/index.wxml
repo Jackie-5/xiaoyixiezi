@@ -1,0 +1,24 @@
+<!-- index.wxml -->
+<view class="coniner">
+  <view >
+    <view class="">
+      <i-tag></i-tag>>
+    </view>
+  </view>
+
+  <view class="container-box">
+    <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <view id="green" class="scroll-view-item bc_green"></view>
+      <view id="red"  class="scroll-view-item bc_red"></view>
+      <view id="yellow" class="scroll-view-item bc_yellow"></view>
+      <view id="blue" class="scroll-view-item bc_blue"></view>
+  </scroll-view>
+  </view>
+  <view class="">
+    <i-tab-bar current="{{ current }}" bindchange="handleChange" fixed>
+      <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+      <i-tab-bar-item key="add" icon="add" current-icon="add" size="30"></i-tab-bar-item>
+      <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+    </i-tab-bar>
+  </view>
+</view>
