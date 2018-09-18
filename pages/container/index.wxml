@@ -1,0 +1,10 @@
+<!-- index.wxml -->
+<view class="coniner">
+    <view class="" style="height: {{ btnCurrentHieght }}">
+
+    </view>
+    <canvas-container></canvas-container>
+    <view class="" style="height: {{ btnCurrentHieght }}">
+
+    </view>
+</view>

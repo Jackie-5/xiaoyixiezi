@@ -1,38 +1,26 @@
-//index.js
-//获取应用实例
-const app = getApp()
-
 Page({
-  data: {
-    current: 'homepage',
+  data : {
     tagLeft: [
       {
-        name: '作品',
-        key: '',
-        active: true,
+        name : '作品',
+        checked : true,
+        color : 'red'
       },
       {
-        name: '专辑',
-        key: '',
-        active: false,
+        name : '专辑',
+        checked : false,
+        color : 'default'
       }
     ],
-    tagRight: [
-      {
-        name: '热门',
-        key: '',
-        active: true,
-      },
-      {
-        name: '关注',
-        key: '',
-        active: false,
-      }
-    ]
+    tagRight: []
   },
-  handleChange ({ detail }) {
-    this.setData({
-        current: detail.key
-    });
-}
-})
+  oneChange(event){
+    
+  },
+  onChange(event){
+   
+  },
+  test(){
+
+  }
+});

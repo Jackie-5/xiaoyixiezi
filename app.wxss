@@ -8,3 +8,19 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.pull-left {
+  float:left
+}
+
+
+.pull-right {
+  float:right
+}
+
+.clearfix {
+  zoom:1
+}
+.overflow {
+  overflow: hidden;
+}

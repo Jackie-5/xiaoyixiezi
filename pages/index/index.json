@@ -1,7 +1,6 @@
 {
     "usingComponents": {
-        "i-tab-bar": "../../iview/tab-bar/index",
-        "i-tab-bar-item": "../../iview/tab-bar-item/index",
-        "i-tag": "../../iview/tag/index"
+        "i-tag": "../../iview/tag/index",
+        "footer": "../../utils/view-public/footer/index"
     }
 }
