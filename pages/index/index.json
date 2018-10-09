@@ -1,6 +1,7 @@
 {
-    "usingComponents": {
-        "i-tag": "../../iview/tag/index",
-        "footer": "../../utils/view-public/footer/index"
-    }
+  "usingComponents": {
+    "i-load-more": "../../iview/load-more/index",
+    "footer": "../../utils/view-public/footer/index"
+  },
+  "enablePullDownRefresh": true
 }

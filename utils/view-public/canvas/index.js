@@ -4,10 +4,6 @@ Component({
         containerBg: 'canvas-container-bg'
     },
 
-    options: {
-
-    },
-
     properties: {
         container: {
             type: String,
@@ -30,12 +26,17 @@ Component({
         this.initCanvas();
     },
     methods: {
+        changePenColor() {
+            this.setData({
+                penColor: ''
+            })
+        },
         initCanvas() {
             this.writeCtx = wx.createCanvasContext(this.data.container, this);
             this.bgCanvas = wx.createCanvasContext(this.data.containerBg, this);
             this.beginWrite = false;
             this.penmanship = [];
-            this.fontWidth = 320;
+            this.fontWidth = wx.getSystemInfoSync().windowWidth;
             this.moveSum = 0;
         },
         canvasStart(e) {

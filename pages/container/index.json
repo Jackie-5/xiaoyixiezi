@@ -1,5 +1,0 @@
-{
-    "usingComponents": {
-        "canvas-container": "../../../utils/view-public/canvas/index"
-    }
-}

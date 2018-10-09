@@ -1,43 +1,83 @@
 <!-- index.wxml -->
-<view class="coniner">
-  <view
-    class="pull-right overflow"
-  >
-    <i-tag
-      wx:for="{{tagLeft}}" 
-      wx:key="{{index}}"
-      bindchange="onChange" 
-      name="{{index}}" 
-      color="{{item.color}}"
-      checked="{{item.active}}" 
+<view class="xz-index">
+    <view style="display:none">
+        <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.imgUrl}}" bindload="onImageLoad"></image>
+    </view>
+    <view
+        class="xz-index__header clearfix"
     >
-      {{item.name}}
-    </i-tag>
-  </view>
-  <view 
-    class="pull-right overflow"
-  >
-    <i-tag
-        wx:for="{{tagLeft}}" 
-        wx:key="{{index}}"
-        bindchange="onChange" 
-        name="{{index}}" 
-        color="{{item.color}}"
-        checked="{{item.active}}" 
-      >
-      {{item.name}}
-    </i-tag>
-  </view>
+        <view class="float-left xz-index__header__list">
+            <view
+                wx:for="{{tagLeft}}" wx:key="" wx:for-item="it"
+                class="xz-index__header__list__item {{it.checked ? 'active' : ''}}"
+                bind:tap="tabSwitch"
+                data-it="{{it}}"
+                data-param="tagLeft"
+            >
+                <view class="iconfont {{it.icon}} icon"></view>
+                <view class="text">{{it.name}}</view>
+            </view>
+        </view>
 
-  <view class="container-box">
-    <scroll-view scroll-y style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-      <view id="green" class="scroll-view-item bc_green"></view>
-      <view id="red"  class="scroll-view-item bc_red"></view>
-      <view id="yellow" class="scroll-view-item bc_yellow"></view>
-      <view id="blue" class="scroll-view-item bc_blue"></view>
-  </scroll-view>
-  </view>
-  <view class="">
+        <view class="float-right xz-index__header__list">
+            <view
+                    wx:for="{{tagRight}}" wx:key="" wx:for-item="it"
+                    class="xz-index__header__list__item {{it.checked ? 'active' : ''}}"
+                    bind:tap="tabSwitch"
+                    data-it="{{it}}"
+                    data-param="tagRight"
+            >
+                <view class="iconfont {{it.icon}} icon"></view>
+                <view class="text">{{it.name}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="xz-body">
+        <view class="xz-body__list">
+            <view class="xz-body__list__item">
+                <view
+                    class="xz-body__list__item__img"
+                    wx:for="{{col1}}"
+                    wx:key="id"
+                    bind:tap="gotoPage"
+                    data-item="{{item}}"
+                >
+                    <view class="title">{{item.title}} {{item.author}}</view>
+                    <view class="bottom clearfix">
+                        <view class="name float-left">{{item.write_author}}</view>
+                        <view class="zan float-right clearfix">
+                            <view class="iconfont icon-zan3 float-left"></view>
+                            <view class="float-left">{{item.praise}}</view>
+                        </view>
+                    </view>
+                    <view class="bg" style="width:100%;height:{{item.height}}px"></view>
+                    <image lazy-load="true" src="{{item.imgUrl}}" style="width:100%;height:{{item.height}}px"></image>
+                </view>
+            </view>
+            <view class="xz-body__list__item">
+                <view
+                    class="xz-body__list__item__img"
+                    wx:for="{{col2}}"
+                    wx:key="id"
+                    bind:tap="gotoPage"
+                    data-item="{{item}}"
+                >
+                    <view class="title">{{item.title}} {{item.author}}</view>
+                    <view class="bottom clearfix">
+                        <view class="name float-left">{{item.write_author}}</view>
+                        <view class="zan float-right clearfix">
+                            <view class="iconfont icon-zan3 float-left"></view>
+                            <view class="float-left">{{item.praise}}</view>
+                        </view>
+                    </view>
+                    <view class="bg" style="width:100%;height:{{item.height}}px"></view>
+                    <image lazy-load="true" src="{{item.imgUrl}}" style="width:100%;height:{{item.height}}px"></image>
+                </view>
+            </view>
+        </view>
+
+        <i-load-more tip="{{loading.tip}}" loading="{{ loading.load }}" />
+    </view>
+
     <footer></footer>
-  </view>
 </view>

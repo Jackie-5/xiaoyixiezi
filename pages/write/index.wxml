@@ -1,0 +1,31 @@
+<!-- index.wxml -->
+<view class="write-container">
+    <view class="clearfix write-container__row" style="height: {{ btnCurrentHeight }}px">
+        <view class="write-container__row__left float-left"></view>
+        <view class="write-container__row__middle float-left">
+            <view class="">
+                <view>gu</view>
+                <view>故</view>
+            </view>
+            <view>故</view>
+        </view>
+        <view
+            class="write-container__row__right write-container__row__percent float-left"
+            style="line-height: {{ btnCurrentHeight }}px"
+        >
+            95%
+        </view>
+    </view>
+    <canvas-container></canvas-container>
+    <view class="clearfix write-container__row" style="height: {{ btnCurrentHeight }}px">
+        <view class="write-container__row__left float-left"></view>
+        <view class="write-container__row__middle float-left">
+            <view class="">
+                <view>gu</view>
+                <view>故</view>
+            </view>
+            <view>故</view>
+        </view>
+        <view class="write-container__row__right float-left"></view>
+    </view>
+</view>

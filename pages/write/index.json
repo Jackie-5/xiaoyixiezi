@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "canvas-container": "../../../utils/view-public/canvas/index",
+    "i-row": "../../iview/row/index",
+    "i-col": "../../iview/col/index"
+  }
+}

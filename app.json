@@ -1,13 +1,12 @@
 {
   "pages":[
-    "pages/container/index",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/write/index",
+    "pages/index/index"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#707988",
     "navigationBarTitleText": "小乙写字",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"#fff"
   }
 }

@@ -1,0 +1,31 @@
+/**index.wxss**/
+
+.write-container{
+
+}
+.write-container__row {
+    font-size: 12px;
+}
+
+.write-container__row__left {
+    width: 25%;
+}
+.write-container__row__middle {
+    width: 50%;
+}
+.write-container__row__right {
+    width: 25%;
+}
+
+.write-container__row__percent {
+    text-align: center;
+    font-size: 25px;
+}
+
+.write-container__row__left, .write-container__row__middle, .write-container__row__right {
+    height: 100%;
+}
+
+.write-container__row .write-container__row__middle{
+    background: #eee;
+}
