@@ -1,22 +1,21 @@
 let col1H = 0;
 let col2H = 0;
 let nowPageIndex = 1;
+const fetch = require('../../utils/fetch');
 Page({
   data: {
-    tagLeft:  [
+    tagLeft: [
       {
         name: '作品',
         checked: true,
         color: 'red',
-        icon: 'icon-zuopin',
-        key: '123'
+        key: 'opus'
       },
       {
         name: '专辑',
         checked: false,
         color: 'default',
-        icon: 'icon-zhuanji',
-        key: '321'
+        key: 'album'
       }
     ],
     tagRight: [
@@ -24,15 +23,19 @@ Page({
         name: '热门',
         checked: true,
         color: 'red',
-        icon: 'icon-remen',
         key: '567'
       },
       {
         name: '关注',
         checked: false,
         color: 'default',
-        icon: 'icon-xin',
         key: '765'
+      },
+      {
+        name: '附近',
+        checked: false,
+        color: 'default',
+        key: '7652'
       }
     ],
     topBarNum: false,
@@ -48,7 +51,7 @@ Page({
       load: true
     }
   },
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
     nowPageIndex = 1;
     wx.showNavigationBarLoading();
     this.loadImages(function () {
@@ -56,13 +59,14 @@ Page({
       wx.hideNavigationBarLoading();
     });
   },
-  onReachBottom: function() {
+  onReachBottom: function () {
     if (this.data.loading.load) {
       nowPageIndex += 1;
       this.loadImages();
     }
   },
-  onLoad: function() {
+  onLoad: function () {
+
     wx.getSystemInfo({
       success: (res) => {
         let ww = res.windowWidth;
@@ -143,55 +147,46 @@ Page({
       }
     });
 
-    wx.request({
-      url: 'http://192.168.31.220:3000/home.json',
-      header: {
-        'content-type': 'application/json'
-      },
-      data: {
-
-      },
-      success: function (res) {
-        const data = res.data;
-        let images = [];
-        let col1 = [];
-        let col2 = [];
-        if (nowPageIndex === 1) {
-          images = res.data.data;
-        } else {
-          images = [..._this.data.images, ...data.data];
-          col1 = _this.data.col1;
-          col2 = _this.data.col2;
-        }
-
-        let baseId = "img-" + (+new Date());
-
-        for (let i = 0; i < images.length; i++) {
-          images[i].id = baseId + "-" + i;
-        }
-
-        _this.setData({
-          loadingCount: images.length,
-          images,
-          col1,
-          col2,
-          loading: {
-            tip: '数据加载中',
-            load: true
+    fetch('/indexHome')
+        .then((data)=> {
+          let images = [];
+          let col1 = [];
+          let col2 = [];
+          if (nowPageIndex === 1) {
+            images = data.data;
+          } else {
+            images = [..._this.data.images, ...data.data];
+            col1 = _this.data.col1;
+            col2 = _this.data.col2;
           }
-        });
 
-        if (data.totalPage <= nowPageIndex) {
+          let baseId = `img-${+new Date()}`;
+
+          for (let i = 0; i < images.length; i++) {
+            images[i].id = baseId + "-" + i;
+          }
+
           _this.setData({
+            loadingCount: images.length,
+            images,
+            col1,
+            col2,
             loading: {
-              tip: '已经到最底部啦',
-              load: false
+              tip: '数据加载中',
+              load: true
             }
           });
-        }
-        callback && callback()
-      }
-    });
+
+          if (data.totalPage <= nowPageIndex) {
+            _this.setData({
+              loading: {
+                tip: '已经到最底部啦',
+                load: false
+              }
+            });
+          }
+          callback && callback()
+        });
   },
 
   tabSwitch: function (e) {

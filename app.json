@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/write/index",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/write/index"
   ],
   "window":{
     "backgroundTextStyle":"dark",

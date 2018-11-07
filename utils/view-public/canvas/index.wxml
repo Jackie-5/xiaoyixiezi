@@ -1,16 +1,19 @@
-<view class="canvas-box">
-    <canvas
-        style="width: 100%; height: {{ currentHeight }}; position:absolute; top:0; left:0; z-index: 10; background:transparent;"
-        disable-scroll="true"
-        canvas-id="canvas-container"
-        bindtouchstart="canvasStart"
-        bindtouchmove="canvasTouchMove"
-        bindtouchend="convasEnd"
-    >
-    </canvas>
-    <canvas
-        style="width: 100%; height: {{ currentHeight }}; margin-left:-3px; margin-top: -3px"
-        canvas-id="canvas-container-bg"
-    >
-    </canvas>
+<view
+  class="canvas-box"
+  style="width: {{ canvasWidth }}px;"
+>
+  <canvas
+    style="width: {{ canvasWidth }}px; height: {{ currentHeight }}; position:absolute; top:0; left:0; z-index: 10; background:transparent;"
+    disable-scroll="true"
+    canvas-id="canvas-container"
+    bindtouchstart="canvasStart"
+    bindtouchmove="canvasTouchMove"
+    bindtouchend="convasEnd"
+  >
+  </canvas>
+  <canvas
+    style="width: {{ canvasWidth }}px; height: {{ currentHeight }}; margin-left:-3px; margin-top: -3px"
+    canvas-id="canvas-container-bg"
+  >
+  </canvas>
 </view>
