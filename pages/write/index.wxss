@@ -1,31 +1,158 @@
 /**index.wxss**/
 
-.write-container{
-
+.write-container {
+  background:url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1541588298723&di=5a3293c374268af608027a30fc89b2c2&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F4b90f603738da97739564f06bb51f8198618e3a6.jpg") no-repeat;
+  position:relative;
+  height:100%;
 }
+
+.write-container__cbg {
+  background:#fff;
+  opacity: 0.8;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 1;
+}
+
+.write-container-box {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 10;
+}
+
 .write-container__row {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .write-container__row__left {
-    width: 25%;
+  width: 15%;
 }
+
 .write-container__row__middle {
-    width: 50%;
+  width: 70%;
 }
+
 .write-container__row__right {
-    width: 25%;
+  width: 15%;
 }
 
 .write-container__row__percent {
-    text-align: center;
-    font-size: 25px;
+  text-align: center;
+  font-size: 25px;
 }
 
 .write-container__row__left, .write-container__row__middle, .write-container__row__right {
-    height: 100%;
+  height: 100%;
+  position:relative;
 }
 
-.write-container__row .write-container__row__middle{
-    background: #eee;
+.write-container__row .write-container__row__middle {
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.page-method{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+
+.write-cont {
+  width: 100%;
+}
+
+.canvas-box-border{
+  position:relative;
+  z-index:1;
+  background:#fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+}
+
+.image-box{
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align: center;
+  left:0;
+  top:0;
+}
+
+.image-box__font{
+  font-size:50px;
+  color:#787878;
+}
+
+.write-canvas-p{
+  width:100%;
+  height:100%;
+  position:relative;
+  z-index: 10;
+}
+
+.write-canvas-bg{
+  width:100%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+}
+
+.write-canvas-bg image {
+  width:100%;
+  height:100%;
+  opacity: 0.3;
+}
+
+.write-canvas-left{
+  position:absolute;
+  left:0;
+  top:5px;
+  text-align: center;
+  width: 80px;
+  color:#787878;
+}
+
+.write-canvas-right{
+  position:absolute;
+  right:0;
+  top:5px;
+  text-align: center;
+  width: 80px;
+  color:#787878;
+}
+
+
+.write-middle-left{
+  width: 60px;
+  text-align: center;
+  color:#787878;
+  position:absolute;
+  left:0;
+  top:5px;
+}
+.write-middle-right{
+  width: 60px;
+  text-align: center;
+  position:absolute;
+  color:#787878;
+  right:0;
+  top:5px;
+}
+
+.current-font-write{
+  width:100%;
+  position:fixed;
+  bottom: 52px;
+  left:0;
+  z-index: 10;
+  text-align: center;
+  font-size:12px;
 }

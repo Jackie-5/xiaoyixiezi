@@ -1,31 +1,87 @@
 <!-- index.wxml -->
 <view class="write-container">
-    <view class="clearfix write-container__row" style="height: {{ btnCurrentHeight }}px">
+  <view class="write-container__cbg"></view>
+
+  <view class="write-container-box">
+    <view class="write-cont" style="height:{{ boxHeight }}px;">
+      <view class="clearfix write-container__row" style="height: {{ btnCurrentHeight }}px; margin-top: 28px;">
         <view class="write-container__row__left float-left"></view>
         <view class="write-container__row__middle float-left">
-            <view class="">
-                <view>gu</view>
-                <view>故</view>
-            </view>
+          <view class="write-middle-left">
+            <view>jiang</view>
             <view>故</view>
+          </view>
+          <view class="image-box">
+            <image
+              style="width:{{btnCurrentHeight}}px; height: {{btnCurrentHeight}}px;"
+              src="http://admin.eastdoing.com/Upload/files/book/3B2F06CC7998816A/img/1027393FFBFD238FE37AC546C4AE5C0F.png"
+            ></image>
+            <view class="image-box__font" style="line-height: {{btnCurrentHeight}}px">故</view>
+          </view>
+          <view class="write-middle-right">
+            <view>相似度</view>
+            <view style="color: #ff0000">80%</view>
+          </view>
         </view>
         <view
-            class="write-container__row__right write-container__row__percent float-left"
-            style="line-height: {{ btnCurrentHeight }}px"
+          class="write-container__row__right write-container__row__percent float-left"
+          style="line-height: {{ btnCurrentHeight }}px"
         >
-            95%
         </view>
-    </view>
-    <canvas-container></canvas-container>
-    <view class="clearfix write-container__row" style="height: {{ btnCurrentHeight }}px">
+      </view>
+
+
+      <view class="canvas-box-border" style="width: {{ writeWidth }}px; margin-left:{{ writeMarginLeft }}px;">
+        <view class="write-canvas-left">
+          <view>jiang</view>
+          <view>故</view>
+        </view>
+
+        <view class="write-canvas-p">
+          <canvas-container></canvas-container>
+        </view>
+        <view class="write-canvas-bg">
+          <image
+            src="http://admin.eastdoing.com/Upload/files/book/3B2F06CC7998816A/img/1027393FFBFD238FE37AC546C4AE5C0F.png"
+          ></image>
+        </view>
+      </view>
+
+
+      <view class="clearfix write-container__row" style="height: {{ btnCurrentHeight }}px">
         <view class="write-container__row__left float-left"></view>
         <view class="write-container__row__middle float-left">
-            <view class="">
-                <view>gu</view>
-                <view>故</view>
-            </view>
+          <view class="write-middle-left">
+            <view>jiang</view>
             <view>故</view>
+          </view>
+          <view class="image-box">
+            <image
+              style="width:{{btnCurrentHeight}}px; height: {{btnCurrentHeight}}px;"
+              src="http://admin.eastdoing.com/Upload/files/book/3B2F06CC7998816A/img/1027393FFBFD238FE37AC546C4AE5C0F.png"
+            ></image>
+            <!--<view class="image-box__font" style="line-height: {{btnCurrentHeight}}px">故</view>-->
+          </view>
         </view>
-        <view class="write-container__row__right float-left"></view>
+        <view
+          class="write-container__row__right write-container__row__percent float-left"
+          style="line-height: {{ btnCurrentHeight }}px"
+        >
+        </view>
+      </view>
+
     </view>
+    <view class="current-font-write">
+      当前抒写:
+      <view style="display: inline; color: #ff0000;">5</view>
+      共
+      <view style="display: inline; color: #ff0000;">10</view>
+      个字
+    </view>
+    <i-tab-bar class="page-method">
+      <i-tab-bar-item key="refresh" icon="refresh" title="重写"></i-tab-bar-item>
+      <i-tab-bar-item key="brush_fill" icon="brush_fill" title="粗细"></i-tab-bar-item>
+      <i-tab-bar-item key="setup" icon="setup"title="颜色"></i-tab-bar-item>
+    </i-tab-bar>
+  </view>
 </view>
