@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/otherWorks/index",
     "pages/index/index",
     "pages/write/index"
   ],

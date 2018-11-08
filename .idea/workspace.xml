@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="34319f50-dcb2-4dc3-b62c-8075014edcab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+=======
+    <list default="true" id="413de5f2-affa-4bf3-9191-691413a224f0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/constant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/fetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/write/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/write/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/write/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/pages/write/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/write/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/write/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/write/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/write/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/view-public/canvas/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/view-public/canvas/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/view-public/canvas/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/utils/view-public/canvas/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/view-public/canvas/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/utils/view-public/canvas/index.wxss" afterDir="false" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,60 +36,94 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-1196132151">
+    <session id="1175314956">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+<<<<<<< HEAD
           <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.opened" value="6" />
+=======
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="2" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+<<<<<<< HEAD
           <entry key="css" value="2" />
           <entry key="js" value="48" />
           <entry key="json" value="28" />
           <entry key="rnc" value="1" />
           <entry key="wxml" value="19" />
           <entry key="wxss" value="18" />
+=======
+          <entry key="js" value="3" />
+          <entry key="json" value="4" />
+          <entry key="wxml" value="2" />
+          <entry key="wxss" value="3" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
           <entry key="CSS" value="20" />
           <entry key="HTML" value="18" />
           <entry key="JSON" value="28" />
           <entry key="JavaScript" value="48" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="RNG Compact" value="1" />
+=======
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="2" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="3" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="css" value="1" />
           <entry key="js" value="3366" />
           <entry key="json" value="65" />
           <entry key="wxml" value="2972" />
           <entry key="wxss" value="3075" />
+=======
+          <entry key="js" value="13" />
+          <entry key="json" value="6" />
+          <entry key="wxml" value="81" />
+          <entry key="wxss" value="76" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="CSS" value="3076" />
           <entry key="HTML" value="2972" />
           <entry key="JSON" value="65" />
           <entry key="JavaScript" value="3366" />
+=======
+          <entry key="CSS" value="76" />
+          <entry key="HTML" value="81" />
+          <entry key="JSON" value="6" />
+          <entry key="JavaScript" value="13" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/write/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
@@ -92,42 +147,53 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/write/index.wxss">
+        <entry file="file://$PROJECT_DIR$/pages/index/index.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="2584">
               <caret line="152" column="12" selection-start-line="152" selection-start-column="12" selection-end-line="152" selection-end-column="12" />
+=======
+            <state relative-caret-position="1769">
+              <caret line="145" column="16" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="16" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/view-public/canvas/index.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/index/index.wxss">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="272">
               <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+=======
+            <state relative-caret-position="490">
+              <caret line="119" column="18" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/constant.js">
+        <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="30">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/view-public/canvas/index.wxml">
+        <entry file="file://$PROJECT_DIR$/pages/index/index.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="37" />
+            <state relative-caret-position="445">
+              <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="30" />
               <folding>
-                <element signature="n#style#0;n#view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#canvas#0;n#view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#canvas#1;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#view#2;n#view#0;n#view#1;n#view#0;n#view#2;n#view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#image#0;n#view#0;n#view#1;n#view#0;n#view#2;n#view#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,34 +201,10 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onImageLoad</find>
-      <find>xz-index__header</find>
-      <find>onPageScroll</find>
-      <find>imageId</find>
-      <find>formatTime</find>
-      <find>test</find>
-      <find>callback</find>
-      <find>loadImages</find>
-      <find>res</find>
-      <find>btnCurrentHeight</find>
-      <find>fontWidth</find>
-      <find>write-cont</find>
-      <find>image-box</find>
-      <find>write-canvas-p</find>
+      <find>tagRight</find>
     </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/pages</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -170,6 +212,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/css/iconfont.css" />
         <option value="$PROJECT_DIR$/app.wxss" />
         <option value="$PROJECT_DIR$/css/iconfont.wxss" />
@@ -192,18 +235,44 @@
         <option value="$PROJECT_DIR$/pages/write/index.wxss" />
         <option value="$PROJECT_DIR$/pages/write/index.wxml" />
         <option value="$PROJECT_DIR$/app.json" />
+=======
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/pages/index/index.js" />
+        <option value="$PROJECT_DIR$/pages/index/index.wxml" />
+        <option value="$PROJECT_DIR$/pages/index/index.wxss" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Angular</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -228,23 +297,6 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="xiaoyixiezi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaoyixiezi" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="write" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiaoyixiezi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaoyixiezi" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xiaoyixiezi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xiaoyixiezi" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-              <item name="view-public" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -253,19 +305,15 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="$USER_HOME$/.nvm/versions/node/v8.9.0/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/utils" />
-      <recent name="$PROJECT_DIR$/utils/requset" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -285,10 +333,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="34319f50-dcb2-4dc3-b62c-8075014edcab" name="Default Changelist" comment="" />
-      <created>1538546291598</created>
+      <changelist id="413de5f2-affa-4bf3-9191-691413a224f0" name="Default Changelist" comment="" />
+      <created>1541594315229</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1538546291598</updated>
       <workItem from="1538546294419" duration="451000" />
       <workItem from="1538546760119" duration="2177000" />
@@ -296,10 +345,16 @@
       <workItem from="1538903646183" duration="2120000" />
       <workItem from="1541560721032" duration="9960000" />
       <workItem from="1541645801883" duration="149000" />
+=======
+      <updated>1541594315229</updated>
+      <workItem from="1541594316472" duration="1029000" />
+      <workItem from="1541595454619" duration="793000" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="39536000" />
   </component>
   <component name="TodoView">
@@ -310,24 +365,27 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+=======
+    <option name="totallyTimeSpent" value="1822000" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24894515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32891566" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32959184" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -341,35 +399,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/iview/grid-icon/index.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iview/grid-icon/index.wxml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iview/radio/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/iview/radio/index.wxml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/structural.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="147" column="16" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/iconfont.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.config.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/pages/index/index.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -433,24 +466,29 @@
           <caret line="2" column="16" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/app.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/util.js">
+    <entry file="file://$PROJECT_DIR$/pages/album/index.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/view-public/canvas/index.wxss">
+    <entry file="file://$PROJECT_DIR$/pages/album/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" lean-forward="true" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        <state relative-caret-position="180">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/write/index.json">
+    <entry file="file://$PROJECT_DIR$/pages/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        <state relative-caret-position="1769">
+          <caret line="145" column="16" selection-start-line="145" selection-start-column="8" selection-end-line="145" selection-end-column="16" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/utils/view-public/footer/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -480,10 +518,27 @@
             <element signature="n#style#0;n#view#2;n#view#2;n#view#0;n#view#1;n#view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#view#0;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#view#1;n#view#1;n#view#1;n#view#0;n#!!top" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index/index.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="80" column="17" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#view#2;n#view#0;n#view#1;n#view#0;n#view#2;n#view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#image#0;n#view#0;n#view#1;n#view#0;n#view#2;n#view#0;n#!!top" expanded="true" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/pages/write/index.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2584">
@@ -514,6 +569,12 @@
             <element signature="n#style#0;n#canvas#0;n#view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#1;n#view#0;n#!!top" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/pages/index/index.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="119" column="18" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
+>>>>>>> 3c3f709b647da439d7a2c036d0d3887bf4c41d7c
         </state>
       </provider>
     </entry>

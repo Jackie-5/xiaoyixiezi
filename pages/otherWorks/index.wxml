@@ -1,0 +1,85 @@
+<!-- index.wxml -->
+<view class="xz-index clearfix">
+  <view style="display:none">
+    <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.imgUrl}}" bindload="onImageLoad"></image>
+  </view>
+  <view
+    class="xz-index__header clearfix float-left"
+  >
+    <view class="xz-index__header__bg">
+      <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg"></image>
+    </view>
+    <view class="xz-index__header__basis_info">
+      <view class="photo">
+        <view class="photo__img">
+          <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg"></image>
+        </view>
+      </view>
+      <view class="basis_info">
+        <view class="basis_info__title">张三</view>
+        <view class="basis_info__dsc">留下一句话吧留下一句话吧</view>
+        <view class="basis__number">
+          <view class="basis__number__item">
+            <view class="number">400</view>
+            <view>作品</view>
+          </view>
+          <view class="basis__number__item">
+            <view class="number">400</view>
+            <view>粉丝</view>
+          </view>
+          <view class="basis__number__item">
+            <view class="iconfont icon-xin"></view>
+            <view>关注</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="xz-body float-left">
+    <view class="xz-body__list">
+      <view class="xz-body__list__item">
+        <view
+          class="xz-body__list__item__img"
+          wx:for="{{col1}}"
+          wx:key="id"
+          bind:tap="gotoPage"
+          data-item="{{item}}"
+        >
+          <view class="title">{{item.title}} {{item.author}}</view>
+          <view class="bottom clearfix">
+            <view class="name float-left">{{item.write_author}}</view>
+            <view class="zan float-right clearfix">
+              <view class="iconfont icon-zan3 float-left"></view>
+              <view class="float-left">{{item.praise}}</view>
+            </view>
+          </view>
+          <view class="bg" style="width:100%;height:{{item.height}}px"></view>
+          <image lazy-load="true" src="{{item.imgUrl}}" style="width:100%;height:{{item.height}}px"></image>
+        </view>
+      </view>
+      <view class="xz-body__list__item">
+        <view
+          class="xz-body__list__item__img"
+          wx:for="{{col2}}"
+          wx:key="id"
+          bind:tap="gotoPage"
+          data-item="{{item}}"
+        >
+          <view class="title">{{item.title}} {{item.author}}</view>
+          <view class="bottom clearfix">
+            <view class="name float-left">{{item.write_author}}</view>
+            <view class="zan float-right clearfix">
+              <view class="iconfont icon-zan3 float-left"></view>
+              <view class="float-left">{{item.praise}}</view>
+            </view>
+          </view>
+          <view class="bg" style="width:100%;height:{{item.height}}px"></view>
+          <image lazy-load="true" src="{{item.imgUrl}}" style="width:100%;height:{{item.height}}px"></image>
+        </view>
+      </view>
+    </view>
+
+    <i-load-more tip="{{loading.tip}}" loading="{{ loading.load }}"/>
+  </view>
+
+</view>
