@@ -1,5 +1,6 @@
 const fetch = require('../../utils/fetch');
 const requestConfig = require('../../utils/config/request');
+const { $Toast } = require('../../iview/base/index');
 
 const { getProduct, getAlbumList } = requestConfig.index;
 
@@ -88,21 +89,29 @@ Page({
       }
     }
   },
+
   onLoad: function () {
-    const systemInfo = wx.getSystemInfoSync();
-    const ww = systemInfo.windowWidth;
-    const wh = systemInfo.windowHeight;
-    const imgWidth = ww * 0.48;
-    nowPageIndex = 1;
-    this.setData({
-      nowTagLeft: this.data.tagLeft[0],
-    }, () => {
+    try {
+      const systemInfo = wx.getSystemInfoSync();
+      const ww = systemInfo.windowWidth;
+      const wh = systemInfo.windowHeight;
+      const imgWidth = ww * 0.48;
+      nowPageIndex = 1;
       this.setData({
-        scrollH: wh,
-        imgWidth: imgWidth
+        nowTagLeft: this.data.tagLeft[0],
+      }, () => {
+        this.setData({
+          scrollH: wh,
+          imgWidth: imgWidth
+        });
+        this.loadImages();
       });
-      this.loadImages();
-    });
+    } catch (e) {
+      $Toast({
+        content: '获取系统信息失败',
+        type: 'error'
+      });
+    }
   },
   onImageLoad: function (e) {
     let imageId = e.currentTarget.id;
