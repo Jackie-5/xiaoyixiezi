@@ -1,0 +1,207 @@
+/**index.wxss**/
+
+.work-detail {
+  background: #f4f4f4;
+  overflow: hidden;
+}
+
+.work-detail__image {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.work-detail__info{
+  margin-top: 10px;
+  background:#fff;
+  padding:10px;
+}
+
+.work-detail__info .photo{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin:2px 10px 0 0
+}
+
+.work-detail__info .work-name .name{
+  font-size: 16px;
+}
+.work-detail__info .work-name .desc{
+  font-size: 12px;
+  color:#939393;
+}
+
+.work-detail__info .title{
+  font-size: 16px;
+  padding: 10px 0 0 0;
+  font-weight: bold;
+}
+
+
+
+.detail-btn {
+  display: flex;
+  background: #fff;
+  padding: 0 5px;
+}
+
+.detail-btn .detail-btn__item{
+  flex: 1;
+  padding:5px;
+}
+
+.detail-btn__item .item{
+  text-align: center;
+  height:35px;
+  line-height:35px;
+  width:100%;
+  margin:0 0 10px 0;
+  background:#fff!important;
+  font-size:14px;
+}
+.detail-btn__item .item view{
+  display: inline-block;
+}
+.detail-btn__item .item .iconfont{
+  font-size: 13px;
+  margin-right:5px;
+}
+
+.remark {
+  margin-top: 10px;
+  background: #fff;
+  padding:10px 10px 50px 10px;
+}
+
+
+.remark .remark__item {
+  padding: 10px;
+}
+.remark .remark__item .photo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin:2px 10px 0 0
+}
+
+.remark .remark__item .name{
+  font-size: 16px;
+}
+.remark .remark__item .desc{
+  font-size: 12px;
+  color:#939393;
+}
+
+
+.remark .remark__item .zan{
+  font-size:12px;
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+.remark .remark__item .zan .iconfont{
+  font-size: 12px;
+  margin-top:1px;
+  margin-right: 3px;
+}
+
+.remark .remark__item .remark-content{
+  font-size: 14px;
+  display: flex;
+  margin-top:10px;
+}
+.remark .remark__item .remark-content .remark-content__left{
+  max-width:45px;
+  flex:1;
+}
+
+.remark .remark__item .remark-content .remark-content__right{
+  flex:1;
+}
+.remark .remark__item .tips {
+  font-size: 12px;
+  margin-left: 45px;
+  margin-top: 10px;
+}
+
+.remark .remark__item .tips .time {
+  margin-top: 6px;
+  margin-right:15px;
+}
+
+
+.remark .remark__item .tips .tips__btn {
+  /*background:#fff!important;*/
+  height:30px;
+  line-height:30px;
+  font-size:12px;
+  border: 0;
+  box-shadow: 0 0 0;
+  margin: 0;
+}
+
+.remark .remark__none {
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  font-size:14px;
+  color:#939393;
+}
+
+
+.write-fixed {
+  width: 100%;
+  padding: 10px;
+  left:0;
+  bottom: 0;
+  position:fixed;
+  background:#f9f9f9;
+  border-top: 1px solid #dddddd;
+  display: flex;
+}
+.write-fixed .write-input {
+  min-height: 25px;
+  border-radius: 10px;
+  background:#ddd;
+  padding:0 10px;
+  flex: 2.2;
+}
+.write-fixed .write-input .iconfont {
+  z-index:2;
+  margin-top: 6px;
+  margin-right:3px;
+}
+.write-fixed .write-input input {
+  width: 80%;
+  font-size: 12px;
+  height: 25px;
+}
+.write-fixed .write-icon {
+  flex: .8;
+  display: flex;
+  text-align: center;
+  padding:0 10px;
+  color: #939393;
+}
+.write-fixed .write-icon .write-icon__item{
+  flex: 1;
+  font-size: 20px;
+}
+.write-fixed .write-icon .write-icon__item .icon-fenxiang{
+  font-size: 17px;
+  margin-top:3px;
+}
+.write-fixed .write-icon .write-icon__item .icon{
+  font-size: 20px
+}
+
+
+.write-fixed .write-textarea__send {
+  flex: 1;
+  font-size: 16px;
+  margin-left:5px;
+  line-height:25px;
+  color: #939393;
+}
+

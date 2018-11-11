@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/workDetail/index",
+    "pages/albumWorks/index",
     "pages/otherWorks/index",
     "pages/index/index",
     "pages/write/index"

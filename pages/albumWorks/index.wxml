@@ -16,8 +16,7 @@
         </view>
       </view>
       <view class="basis_info">
-        <view class="basis_info__title">张三</view>
-        <view class="basis_info__dsc">留下一句话吧留下一句话吧</view>
+        <view class="basis_info__title">张三的作品集</view>
         <view class="basis__number">
           <view class="basis__number__item">
             <view class="number">400</view>
@@ -47,7 +46,7 @@
         >
           <view class="title">{{item.title}} {{item.author}}</view>
           <view class="bottom clearfix">
-            <!--<view class="name float-left">{{item.write_author}}</view>-->
+            <view class="name float-left">{{item.write_author}}</view>
             <view class="zan float-right clearfix">
               <view class="iconfont icon-zan3 float-left"></view>
               <view class="float-left">{{item.praise}}</view>

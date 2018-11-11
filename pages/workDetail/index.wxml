@@ -1,0 +1,165 @@
+<!-- index.wxml -->
+<view class="work-detail">
+
+  <view class="work-detail__image">
+    <image src="http://zgnewsreport.com/d/file/zixun/2018-08-22/b6a91e81f1815cd7ab058665db3dbcc3.png"></image>
+  </view>
+  <view class="work-detail__info clearfix">
+    <view class="photo float-left">
+      <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg"></image>
+    </view>
+    <view class="work-name clearfix">
+      <view class="name">作者名字</view>
+      <view class="desc">是打发斯蒂芬</view>
+    </view>
+
+    <view class="title">标题标题</view>
+  </view>
+
+
+  <view class="detail-btn">
+    <view class="detail-btn__item">
+      <i-button shape="circle" size="small" i-class="item">
+        <view class="iconfont icon-zan3"></view>
+        <view class="">30</view>
+      </i-button>
+    </view>
+    <view class="detail-btn__item">
+      <i-button shape="circle" size="small" i-class="item">
+        <view class="iconfont icon-fenxiang"></view>
+        <view class="">分享</view>
+      </i-button>
+    </view>
+    <view class="detail-btn__item">
+      <i-button shape="circle" size="small" i-class="item">
+        <view class="iconfont icon-winfo-icon-chakanxiangqing"></view>
+        <view class="">作品赏析</view>
+      </i-button>
+    </view>
+  </view>
+
+
+  <view class="remark">
+      <!--<view class="remark__none">暂无评论，点击抢沙发</view>-->
+
+    <view class="remark__item clearfix">
+      <view class="photo float-left">
+        <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg"></image>
+      </view>
+      <view>
+        <view class="clearfix">
+          <view class="float-right zan clearfix">
+            <view class="iconfont icon-zan3 float-left"></view>
+            <view class="float-left">300</view>
+          </view>
+          <view>
+            <view class="name">我是评论名字</view>
+            <view class="desc">随便写的 可以放tag 等</view>
+          </view>
+        </view>
+      </view>
+      <veiw class="remark-content">
+        <view class="remark-content__left"></view>
+        <view class="remark-content__right">
+          士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发
+          士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发
+        </view>
+      </veiw>
+      <view class="tips clearfix">
+        <view class="time float-left">10小时前</view>
+        <i-button shape="circle" size="small" i-class="float-left tips__btn">17回复</i-button>
+      </view>
+
+    </view>
+
+
+    <view class="remark__item clearfix">
+      <view class="photo float-left">
+        <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg"></image>
+      </view>
+      <view>
+        <view class="clearfix">
+          <view class="float-right zan clearfix">
+            <view class="iconfont icon-zan3 float-left"></view>
+            <view class="float-left">300</view>
+          </view>
+          <view>
+            <view class="name">我是评论名字</view>
+            <view class="desc">随便写的 可以放tag 等</view>
+          </view>
+        </view>
+      </view>
+      <veiw class="remark-content">
+        <view class="remark-content__left"></view>
+        <view class="remark-content__right">
+          士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发
+          士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发士大夫士大夫撒飞洒发沙发斯蒂芬斯蒂芬沙发沙发沙发
+        </view>
+      </veiw>
+      <view class="tips clearfix">
+        <view class="time float-left">10小时前</view>
+        <i-button shape="circle" size="small" i-class="float-left tips__btn">17回复</i-button>
+      </view>
+
+    </view>
+
+
+  </view>
+
+  <view class="write-fixed">
+    <view
+      class="write-input clearfix"
+      wx:if="{{true}}"
+    >
+      <view wx:if="{{true}}" class="iconfont icon-qianbi float-left"></view>
+      <input
+        type="text"
+        placeholder="说点什么吧..."
+      />
+
+    </view>
+
+    <view
+      class="write-icon"
+      wx:if="{{true}}"
+    >
+      <view class="write-icon__item">
+        <view class="iconfont icon-fenxiang"></view>
+      </view>
+      <view class="write-icon__item">
+        <view class="iconfont icon-shoucang icon"></view>
+      </view>
+    </view>
+
+    <view
+      class="write-textarea__send"
+      wx:if="{{false}}"
+    >
+
+      发送
+    </view>
+
+
+    <!--<view-->
+      <!--class="write-textarea"-->
+      <!--wx:if="{{true}}"-->
+    <!--&gt;-->
+      <!--<i-input-->
+        <!--i-class="textarea"-->
+        <!--type="textarea"-->
+        <!--placeholder="说点什么吧..."-->
+      <!--/>-->
+    <!--</view>-->
+    <!--<view-->
+      <!--class="write-textarea__send"-->
+      <!--wx:if="{{true}}"-->
+    <!--&gt;-->
+
+      <!--<view class="send">-->
+        <!--发送-->
+      <!--</view>-->
+    <!--</view>-->
+
+  </view>
+
+</view>
