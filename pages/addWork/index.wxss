@@ -1,0 +1,14 @@
+/**index.wxss**/
+
+.add-work{
+  background: #f4f4f4;
+  overflow: hidden;
+}
+
+.add-work .input{
+
+}
+.add-work .input textarea{
+  height: 200px;
+}
+

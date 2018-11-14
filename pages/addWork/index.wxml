@@ -1,0 +1,19 @@
+<!-- index.wxml -->
+<view class="add-work">
+  <view class="input">
+    <i-input
+      title="标题"
+      value=""
+    />
+    <i-input
+      value=""
+      title="作者" />
+    <i-input
+      i-class="textarea"
+      type="textarea"
+      value=""
+      title="内容"
+      maxlength="200"
+    />
+  </view>
+</view>

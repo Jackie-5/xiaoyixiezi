@@ -1,0 +1,6 @@
+/**index.wxss**/
+
+.work-enjoy{
+  background: #f4f4f4;
+  overflow: hidden;
+}
