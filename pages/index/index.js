@@ -1,6 +1,6 @@
-const fetch = require('../../utils/fetch');
-const requestConfig = require('../../utils/config/request');
-const { $Toast } = require('../../iview/base/index');
+import fetch from '../../utils/fetch';
+import requestConfig from '../../utils/config/request';
+import { $wuxToast } from '../../dist/index'
 
 const { getProduct, getAlbumList } = requestConfig.index;
 
@@ -107,9 +107,11 @@ Page({
         this.loadImages();
       });
     } catch (e) {
-      $Toast({
-        content: '获取系统信息失败',
-        type: 'error'
+      $wuxToast().show({
+        type: 'cancel',
+        duration: 1500,
+        color: '#fff',
+        text: '获取系统信息失败',
       });
     }
   },

@@ -1,6 +1,12 @@
 {
   "usingComponents": {
-    "i-input": "../../iview/input/index"
+    "wux-cell-group": "../../dist/cell-group/index",
+    "wux-cell": "../../dist/cell/index",
+    "wux-textarea": "../../dist/textarea/index",
+    "wux-input": "../../dist/input/index",
+    "wux-switch": "../../dist/switch/index",
+    "wux-upload": "../../dist/upload/index",
+    "wux-button": "../../dist/button/index"
   },
   "enablePullDownRefresh": true
 }

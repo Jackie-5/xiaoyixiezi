@@ -78,10 +78,40 @@
       <view style="display: inline; color: #ff0000;">10</view>
       个字
     </view>
-    <i-tab-bar class="page-method">
-      <i-tab-bar-item key="refresh" icon="refresh" title="重写"></i-tab-bar-item>
-      <i-tab-bar-item key="brush_fill" icon="brush_fill" title="粗细"></i-tab-bar-item>
-      <i-tab-bar-item key="setup" icon="setup"title="颜色"></i-tab-bar-item>
-    </i-tab-bar>
+
+    <wux-tabbar
+      controlled="true"
+      current="{{ current }}"
+      bind:change="handleChange"
+      position="bottom"
+      theme="is_theme"
+    >
+      <wux-tabbar-item title="首页">
+        <wux-badge slot="icon-on">
+          <wux-icon type="ios-home" size="22" />
+        </wux-badge>
+        <wux-badge slot="icon-off">
+          <wux-icon type="ios-home" size="22" />
+        </wux-badge>
+      </wux-tabbar-item>
+      <wux-tabbar-item title="粗细">
+        <wux-badge slot="icon-on">
+          <wux-icon type="ios-add" size="22" />
+        </wux-badge>
+        <wux-badge slot="icon-off">
+          <wux-icon type="ios-add" size="22" />
+        </wux-badge>
+      </wux-tabbar-item>
+      <wux-tabbar-item title="颜色">
+        <wux-badge slot="icon-on">
+          <wux-icon type="ios-person" size="22" />
+        </wux-badge>
+        <wux-badge slot="icon-off">
+          <wux-icon type="ios-person" size="22" />
+        </wux-badge>
+      </wux-tabbar-item>
+    </wux-tabbar>
+
+
   </view>
 </view>

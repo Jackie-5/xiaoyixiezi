@@ -1,7 +1,9 @@
 {
     "component": true,
     "usingComponents": {
-        "i-tab-bar": "../../../iview/tab-bar/index",
-        "i-tab-bar-item": "../../../iview/tab-bar-item/index"
+        "wux-icon": "../../../dist/icon/index",
+        "wux-badge": "../../../dist/badge/index",
+        "wux-tabbar": "../../../dist/tabbar/index",
+        "wux-tabbar-item": "../../../dist/tabbar-item/index"
     }
   }

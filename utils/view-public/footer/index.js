@@ -1,22 +1,18 @@
 Component({
-    externalClasses: [],
-    data: {
-        current: 'homepage'
-    },
+  externalClasses: [],
+  data: {
+    current: '0'
+  },
 
-    options: {
-        
-    },
+  options: {},
 
-    properties: {
-        
-    },
+  properties: {},
 
-    methods: {
-        handleChange({ detail }) {
-            this.setData({
-                current: detail.key
-            });
-        }
+  methods: {
+    handleChange({ detail }) {
+      this.setData({
+        current: detail.key
+      });
     }
+  }
 });

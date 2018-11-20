@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "i-load-more": "../../iview/load-more/index",
+    "wux-divider": "../../dist/divider/index",
     "footer": "../../utils/view-public/footer/index"
   },
   "enablePullDownRefresh": true

@@ -84,8 +84,12 @@
         </view>
       </view>
     </view>
-
-    <i-load-more tip="{{loading.tip}}" loading="{{ loading.load }}"/>
+    <wux-divider>
+      <view class="loadmore">
+        <view wx:if="{{loading.load}}" class="weui-loading"></view>
+        <text class="text">{{loading.tip}}</text>
+      </view>
+    </wux-divider>
   </view>
 
   <view class="zj-body" wx:if="{{nowTagLeft.key === 'album'}}">
@@ -115,8 +119,13 @@
         </view>
       </view>
     </view>
+    <wux-divider>
+      <view class="loadmore">
+        <view wx:if="{{loading.load}}" class="weui-loading"></view>
+        <text class="text">{{loading.tip}}</text>
+      </view>
+    </wux-divider>
 
-    <i-load-more tip="{{loading.tip}}" loading="{{ loading.load }}"/>
   </view>
 
   <footer></footer>

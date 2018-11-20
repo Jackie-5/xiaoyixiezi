@@ -1,19 +1,50 @@
 <!-- index.wxml -->
 <view class="add-work">
-  <view class="input">
-    <i-input
-      title="标题"
-      value=""
-    />
-    <i-input
-      value=""
-      title="作者" />
-    <i-input
-      i-class="textarea"
-      type="textarea"
-      value=""
-      title="内容"
-      maxlength="200"
-    />
+  <view class="">
+    <wux-cell-group title="请填写基础信息">
+      <wux-cell hover-class="none">
+        <wux-input placeholder="标题" />
+      </wux-cell>
+      <wux-cell hover-class="none">
+        <wux-input placeholder="作者" />
+      </wux-cell>
+      <wux-cell hover-class="none">
+        <wux-textarea
+          hasCount rows="5"
+          cursorSpacing="80"
+          placeholder="输入内容..."
+          maxlength="200"
+        />
+      </wux-cell>
+    </wux-cell-group>
+
+    <wux-cell-group title="上传图片">
+      <wux-upload listType="picture-card" showUploadList="{{ false }}" url="https://www.skyvow.cn/api/common/file" bind:change="onChange" bind:success="onSuccess" bind:fail="onFail" bind:complete="onComplete" bind:preview="onPreview">
+        <image src="{{ imageUrl }}" wx:if="{{ imageUrl }}" />
+        <text wx:else>Upload</text>
+      </wux-upload>
+    </wux-cell-group>
+
+    <wux-cell-group title="上传音频">
+      <wux-button block type="positive">positive</wux-button>
+    </wux-cell-group>
+
+    <wux-cell-group title="文字赏析">
+      <wux-cell title="Light">
+        <wux-switch name="light" slot="footer" color="light" value="{{ value1 }}" bind:change="onChange1" />
+      </wux-cell>
+      <wux-cell hover-class="none">
+        <wux-textarea
+          hasCount rows="5"
+          cursorSpacing="80"
+          placeholder="输入内容..."
+          maxlength="200"
+        />
+      </wux-cell>
+    </wux-cell-group>
+
+    <wux-cell-group title="带跳转的列表项">
+      <wux-cell title="跳转到首页" is-link url="/pages/index/index" open-type="switchTab"></wux-cell>
+    </wux-cell-group>
   </view>
 </view>

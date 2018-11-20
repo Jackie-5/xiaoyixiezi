@@ -1,4 +1,4 @@
-const { $Toast } = require('../iview/base/index');
+import { $wuxToast } from '../dist/index'
 const mockUrl = 'https://www.easy-mock.com/mock/5be25a98c937d969819aa14a';
 
 const fetch = (url, params = {}, options = {}) => {
@@ -12,9 +12,11 @@ const fetch = (url, params = {}, options = {}) => {
         resolve(res.data)
       },
       fail: function () {
-        $Toast({
-          content: '接口请求失败',
-          type: 'error'
+        $wuxToast().show({
+          type: 'cancel',
+          duration: 1500,
+          color: '#fff',
+          text: '接口请求失败',
         });
         reject({})
       }

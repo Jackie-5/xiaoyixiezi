@@ -78,7 +78,12 @@
       </view>
     </view>
 
-    <i-load-more tip="{{loading.tip}}" loading="{{ loading.load }}"/>
+    <wux-divider>
+      <view class="loadmore">
+        <view wx:if="{{loading.load}}" class="weui-loading"></view>
+        <text class="text">{{loading.tip}}</text>
+      </view>
+    </wux-divider>
   </view>
 
 </view>

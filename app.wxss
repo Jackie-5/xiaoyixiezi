@@ -1,5 +1,7 @@
 /**app.wxss**/
 @import './css/iconfont.wxss';
+@import './dist/styles/weui.wxss';
+@import './dist/styles/skyvow.wxss';
 .container {
   height: 100%;
   display: flex;
@@ -8,11 +10,8 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
-
-page{
-  height:100%;
 }
+
 
 .float-left {
   float:left
