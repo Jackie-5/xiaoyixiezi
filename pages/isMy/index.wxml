@@ -1,0 +1,72 @@
+<!-- index.wxml -->
+<view class="is-my">
+  <!--<view class="clearfix is-my__box">-->
+    <!--<view class="is-my__photo float-left">-->
+      <!--<image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg"></image>-->
+    <!--</view>-->
+    <!--<view class="is-my__text">-->
+      <!--<view class="is-my__text__name clearfix">-->
+        <!--<view class="float-left name">名字名字名字</view>-->
+        <!--<view class="level float-left">LV2</view>-->
+      <!--</view>-->
+      <!--<view class="is-my__text__desc">介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</view>-->
+    <!--</view>-->
+  <!--</view>-->
+
+  <view
+    class="xz-index__header clearfix float-left"
+  >
+    <view class="xz-index__header__bg">
+      <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg"></image>
+    </view>
+    <view class="xz-index__header__basis_info">
+      <view class="photo">
+        <view class="photo__img">
+          <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg"></image>
+        </view>
+      </view>
+      <view class="basis_info">
+        <view class="basis_info__title">张三的作品集</view>
+        <view class="basis_info__level">LV2</view>
+        <view class="basis_info__dsc">留下一句话吧留下一句话吧</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="card-list clearfix">
+    <view class="float-left card-list__item">
+      <view class="iconfont icon-zuopin1"></view>
+      <view class="text">我的作品</view>
+    </view>
+
+    <view class="float-left card-list__item">
+      <view class="iconfont icon-zuopin1"></view>
+      <view class="text">我的作品</view>
+    </view>
+
+    <view class="float-left card-list__item">
+      <view class="iconfont icon-zuopin1"></view>
+      <view class="text">我的作品</view>
+    </view>
+
+    <view class="float-left card-list__item">
+      <view class="iconfont icon-zuopin1"></view>
+      <view class="text">我的作品</view>
+    </view>
+
+
+    <view class="float-left card-list__item">
+      <view class="iconfont icon-zuopin1"></view>
+      <view class="text">我的作品</view>
+    </view>
+
+    <view class="float-left card-list__item">
+      <view class="iconfont icon-zuopin1"></view>
+      <view class="text">我的作品</view>
+    </view>
+  </view>
+
+
+  <footer></footer>
+
+</view>

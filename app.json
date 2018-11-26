@@ -1,11 +1,15 @@
 {
   "pages":[
+    "pages/isMy/index",
+    "pages/albumWorks/index",
+
+    "pages/otherWorks/index",
+
+    "pages/workDetail/index",
     "pages/addWork/index",
     "pages/selectFont/index",
-    "pages/workDetail/index",
-    "pages/albumWorks/index",
     "pages/workEnjoy/index",
-    "pages/otherWorks/index",
+
     "pages/write/index",
     "pages/index/index"
   ],
