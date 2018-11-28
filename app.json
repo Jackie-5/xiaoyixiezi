@@ -1,21 +1,19 @@
 {
   "pages":[
-    "pages/isMy/index",
+    "pages/enjoy/index",
     "pages/albumWorks/index",
-
     "pages/otherWorks/index",
-
-    "pages/workDetail/index",
     "pages/addWork/index",
+    "pages/write/index",
+    "pages/isMy/index",
+    "pages/workDetail/index",
     "pages/selectFont/index",
     "pages/workEnjoy/index",
-
-    "pages/write/index",
     "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#707988",
+    "navigationBarBackgroundColor": "#d69a52",
     "navigationBarTitleText": "小乙写字",
     "navigationBarTextStyle":"#fff"
   }

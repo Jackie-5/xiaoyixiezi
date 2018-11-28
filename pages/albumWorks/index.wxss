@@ -77,8 +77,7 @@
   font-size: 20px;
 }
 .xz-index__header__basis_info .basis_info .basis__number .basis__number__item .iconfont{
-  font-size: 24px;
-  margin-top: 2px;
+  font-size: 22px;
 }
 
 .scroll-view-item {

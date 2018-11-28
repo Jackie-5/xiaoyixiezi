@@ -1,0 +1,24 @@
+/**index.wxss**/
+
+.enjoy-box {
+
+}
+.enjoy-box .gushi {
+  text-align: center;
+  background:#fff;
+}
+
+.enjoy-box .gushi .gushi__title {
+
+}
+.enjoy-box .gushi .gushi__author {
+
+}
+.enjoy-box .gushi .gushi__item {
+  width: 50%;
+  text-align: right;
+}
+.enjoy-box .gushi .gushi__item:nth-child(2n) {
+  text-align: left;
+}
+

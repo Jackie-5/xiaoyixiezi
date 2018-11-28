@@ -28,7 +28,7 @@
           </view>
           <view class="basis__number__item">
             <view class="iconfont icon-xin"></view>
-            <view>关注</view>
+            <view style="margin-top: -3px;">+关注</view>
           </view>
         </view>
       </view>

@@ -1,0 +1,29 @@
+<!-- index.wxml -->
+<view class="enjoy-box">
+  <view class="gushi">
+    <view class="gushi__title">静夜思</view>
+    <view class="gushi__author">李白</view>
+    <view class="clearfix">
+      <view class="gushi__item float-left">床前明月光，</view>
+      <view class="gushi__item float-left">疑是地上霜，</view>
+      <view class="gushi__item float-left">举头望明月，</view>
+      <view class="gushi__item float-left">低头思故乡。</view>
+    </view>
+  </view>
+
+  <view class="enjoy-box__tags">
+    <wux-segmented-control
+      theme="light"
+      current="true"
+      controlled=""
+      values="{{ ['文字', '照片', '音频', '位置'] }}"
+      bind:change=""
+    />
+  </view>
+  <!--<view class="other">-->
+    <!--<view class="">静夜思</view>-->
+    <!--<view class="">李白</view>-->
+    <!---->
+  <!--</view>-->
+
+</view>
