@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "i-button": "../../dist/i-button/index"
+    "wux-gallery": "../../dist/gallery/index"
   },
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "navigationBarBackgroundColor": "#000"
 }
