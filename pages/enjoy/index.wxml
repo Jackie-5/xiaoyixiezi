@@ -20,6 +20,17 @@
       bind:change=""
     />
   </view>
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          asdfasdfasdf
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
   <!--<view class="other">-->
     <!--<view class="">静夜思</view>-->
     <!--<view class="">李白</view>-->

@@ -2,5 +2,5 @@
   "usingComponents": {
     "wux-segmented-control": "../../dist/segmented-control/index"
   },
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": false
 }

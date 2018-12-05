@@ -1,4 +1,40 @@
 /**index.wxss**/
+page {
+  overflow: hidden;
+}
 .gallery-box {
+  position:relative;
+  height:100%;
+  overflow: hidden;
+}
+.gallery-describe {
+  position:absolute;
+  background:rgba(0,0,0,.5);
+  left:0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  color: #fff;
+  font-size:12px;
+}
+.gallery-describe__tips {
+  padding: 8px 10px 4px 10px;
+  border-bottom: 1px solid rgba(0,0,0,.3)
+}
 
+.gallery-describe__function {
+  padding: 4px 10px 5px 10px;
+}
+
+.gallery-describe__function .function .item {
+  width: 35px;
+  text-align: center;
+}
+
+.gallery-describe__function .function .item:last-child {
+  margin-right: 0;
+}
+
+.gallery-describe__function .function .item .iconfont {
+  font-size: 14px;
 }

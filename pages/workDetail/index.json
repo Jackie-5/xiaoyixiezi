@@ -2,6 +2,7 @@
   "usingComponents": {
     "wux-gallery": "../../dist/gallery/index"
   },
-  "enablePullDownRefresh": true,
+  "enablePullDownRefresh": false,
+  "disableScroll":true,
   "navigationBarBackgroundColor": "#000"
 }
