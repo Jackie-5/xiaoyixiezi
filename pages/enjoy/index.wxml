@@ -13,28 +13,41 @@
 
   <view class="enjoy-box__tags">
     <wux-segmented-control
-      theme="light"
+      theme="is_theme"
       current="true"
       controlled=""
-      values="{{ ['文字', '照片', '音频', '位置'] }}"
-      bind:change=""
+      values="{{ tabs }}"
+      bind:change="tabsChange"
     />
   </view>
   <view>
-    <swiper indicator-dots="{{indicatorDots}}"
-            autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
-      <block wx:for="{{imgUrls}}">
-        <swiper-item>
-          asdfasdfasdf
+
+    <swiper
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+      circular="{{circular}}"
+      bindanimationfinish="swiperAnimatEnd"
+    >
+      <block
+        wx:for="{{character}}"
+        wx:key="index"
+      >
+        <swiper-item class="swiper-font">
+          <wux-wing-blank size="large">
+            <view>{{item.value}}</view>
+          </wux-wing-blank>
+
         </swiper-item>
       </block>
     </swiper>
 
   </view>
   <!--<view class="other">-->
-    <!--<view class="">静夜思</view>-->
-    <!--<view class="">李白</view>-->
-    <!---->
+  <!--<view class="">静夜思</view>-->
+  <!--<view class="">李白</view>-->
+  <!---->
   <!--</view>-->
 
 </view>

@@ -1,6 +1,8 @@
 {
   "usingComponents": {
-    "wux-segmented-control": "../../dist/segmented-control/index"
+    "wux-segmented-control": "../../dist/segmented-control/index",
+    "wux-wing-blank": "../../dist/wing-blank/index",
+    "wux-white-space": "../../dist/white-space/index"
   },
   "enablePullDownRefresh": false
 }

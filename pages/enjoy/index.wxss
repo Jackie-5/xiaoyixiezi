@@ -22,3 +22,9 @@
   text-align: left;
 }
 
+.enjoy-box__tags {
+  margin-top: 10px;
+}
+.swiper-font {
+  font-size: 14px;
+}
