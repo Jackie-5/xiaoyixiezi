@@ -19,7 +19,7 @@ Page({
     circular: false
   },
   tabsChange:(e) => {
-    console.log()
+    console.log(e);
   },
   swiperAnimatEnd: function (e) {
     const { imgUrls } = this.data;
@@ -28,7 +28,6 @@ Page({
       this.setData({
         imgUrls
       });
-
     }
   },
 })

@@ -1,11 +1,13 @@
 /**index.wxss**/
 page {
   overflow: hidden;
+  background:#000;
 }
 .gallery-box {
   position:relative;
   height:100%;
   overflow: hidden;
+  background:#000;
 }
 .gallery-describe {
   position:absolute;

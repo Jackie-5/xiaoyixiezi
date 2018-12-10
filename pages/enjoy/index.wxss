@@ -1,11 +1,12 @@
 /**index.wxss**/
 
 .enjoy-box {
-
+  background:#fff;
+  height: 100%;
 }
 .enjoy-box .gushi {
   text-align: center;
-  background:#fff;
+  padding: 10px 0;
 }
 
 .enjoy-box .gushi .gushi__title {

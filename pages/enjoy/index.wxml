@@ -11,6 +11,7 @@
     </view>
   </view>
 
+
   <view class="enjoy-box__tags">
     <wux-segmented-control
       theme="is_theme"
@@ -44,10 +45,5 @@
     </swiper>
 
   </view>
-  <!--<view class="other">-->
-  <!--<view class="">静夜思</view>-->
-  <!--<view class="">李白</view>-->
-  <!---->
-  <!--</view>-->
 
 </view>
