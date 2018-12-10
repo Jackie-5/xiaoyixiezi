@@ -1,32 +1,5 @@
 
 <view class="gallery-box">
   <wux-gallery id="wux-gallery" />
-  <view class="gallery-describe">
-    <view class="gallery-describe__tips">对我描述的一句话阿士大夫撒地方手动阀是打发斯蒂芬</view>
-    <view class="gallery-describe__function clearfix">
-      <view class="basis__info float-left clearfix">
-        <view class="">李四</view>
-        <view class="">2个小时前</view>
-      </view>
-      <view class="function float-right clearfix">
-        <view class="item float-left">
-          <view class="iconfont icon-zan3"></view>
-          <view class="">0</view>
-        </view>
-        <view class="item float-left">
-          <view class="iconfont icon-pinglun"></view>
-          <view class="">0</view>
-        </view>
 
-        <view class="item float-left">
-          <view class="iconfont icon-more-br"></view>
-          <view class="">赏析</view>
-        </view>
-        <view class="item float-left">
-          <view class="iconfont icon-combinedshapecopy2"></view>
-          <view class="">摹写</view>
-        </view>
-      </view>
-    </view>
-  </view>
 </view>

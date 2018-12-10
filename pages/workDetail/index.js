@@ -6,7 +6,12 @@ const { getInfoList, getAlbumList } = requestConfig.workDetail;
 
 Page({
   data: {
-    detailList: [],
+    detailList: [
+      {
+        image: 'http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg',
+        key: 'loading'
+      }
+    ],
     currentPage: 0,
     totalPage: 0,
   },
@@ -15,32 +20,9 @@ Page({
   },
   onLoad() {
     this.getImgInfo();
-    // fetch(getInfoList, {
-    //
-    // }).then((data) => {
-    //
-    // });
-    // const { detailList } = this.data;
-    // $wuxGallery().show({
-    //   current: 0,
-    //   duration: 200,
-    //   circular: true,
-    //   urls: detailList.map((item) => item.imgUrl),
-    //   showDelete: false,
-    //   indicatorDots: false,
-    //   indicatorColor: '#fff',
-    //   indicatorActiveColor: '#04BE02',
-    //   onTap() {
-    //     return false
-    //   },
-    //   cancel() {
-    //     console.log('Close gallery')
-    //   },
-    //   onChange(e) {
-    //     console.log(e)
-    //   },
-    // })
 
+    this.$wuxGallery = $wuxGallery();
+    this.$wuxGallery.show();
   },
 
   getImgInfo() {
@@ -48,7 +30,7 @@ Page({
     fetch(getInfoList, {
       currentPage: this.data.currentPage,
     }).then((data) => {
-
+      console.log('12313');
       let detailList = [];
       this.data.detailList.forEach((item) => {
         if (item.key !== 'loading') {
@@ -64,7 +46,7 @@ Page({
 
       if (data.data.currentPage < data.data.totalPage) {
         detailList.push({
-          imgUrl: 'http://img.lanrentuku.com/img/allimg/1212/5-121204193R0-50.gif',
+          image: 'http://img.lanrentuku.com/img/allimg/1212/5-121204193R0-50.gif',
           key: 'loading',
         });
       }
@@ -74,29 +56,9 @@ Page({
         currentPage: data.data.currentPage - 1,
         totalPage: data.data.totalPage,
       }, function () {
-        $wuxGallery().show({
-          current: this.data.currentPage,
-          duration: 200,
-          circular: true,
-          urls: this.data.detailList.map((item) => item.imgUrl),
-          showDelete: false,
-          indicatorDots: false,
-          indicatorColor: '#fff',
-          indicatorActiveColor: '#04BE02',
-          onTap() {
-            return false
-          },
-          cancel() {
-            console.log('Close gallery')
-          },
-          onChange(e) {
-            if (self.data.currentPage < self.data.totalPage) {
-              self.setData({
-                currentPage: self.data.currentPage += 1,
-              });
-              self.getImgInfo();
-            }
-          },
+        this.$wuxGallery.setImage({
+          urls: detailList,
+          current: this.data.currentPage
         })
       });
     });

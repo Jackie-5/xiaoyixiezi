@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "wux-gallery": "../../dist/gallery/index"
+    "wux-gallery": "../../dist/gallery-custom/index"
   },
   "enablePullDownRefresh": false,
   "disableScroll":true,

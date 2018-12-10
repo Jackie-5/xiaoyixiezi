@@ -1,0 +1,38 @@
+<wux-animation-group wux-class="wux-gallery" in="{{ in }}" class-names="wux-animate--slideInRight">
+    <swiper class="wux-gallery__swiper" indicator-dots="{{ indicatorDots }}" indicator-color="{{ indicatorColor }}" indicator-active-color="{{ indicatorActiveColor }}" autoplay="{{ autoplay }}" interval="{{ interval }}" duration="{{ duration }}" circular="{{ circular }}" vertical="{{ vertical }}" current="{{ current }}" bindchange="onChange" wx:if="{{ in && images.length }}">
+        <block wx:for="{{ images }}" wx:key="index">
+            <swiper-item class="wux-gallery__item">
+                <image class="wux-gallery__img" mode="aspectFit" src="{{ item.image }}" data-index="{{ index }}" data-touch="{{ item.touch }}" bindtap="onTap" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd" style="transform: scale({{ item.touch.scale }}); transition: {{ transition || 'none' }}"></image>
+                <view class="wux-gallery__remark {{ current === index ? 'wux-gallery__remark--active' : '' }}" wx:if="{{ item.remark }}">{{ item.remark }}</view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="gallery-describe">
+        <view class="gallery-describe__tips">对我描述的一句话阿士大夫撒地方手动阀是打发斯蒂芬</view>
+        <view class="gallery-describe__function clearfix">
+            <view class="basis__info float-left clearfix">
+                <view class="">李四</view>
+                <view class="">2个小时前</view>
+            </view>
+            <view class="function float-right clearfix">
+                <view class="item float-left">
+                    <view class="iconfont icon-zan3"></view>
+                    <view class="">0</view>
+                </view>
+                <view class="item float-left">
+                    <view class="iconfont icon-pinglun"></view>
+                    <view class="">0</view>
+                </view>
+
+                <view class="item float-left">
+                    <view class="iconfont icon-more-br"></view>
+                    <view class="">赏析</view>
+                </view>
+                <view class="item float-left">
+                    <view class="iconfont icon-combinedshapecopy2"></view>
+                    <view class="">摹写</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</wux-animation-group>
