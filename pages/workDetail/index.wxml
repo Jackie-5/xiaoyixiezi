@@ -1,5 +1,52 @@
 
-<view class="gallery-box">
-  <wux-gallery id="wux-gallery" />
+<wux-actionsheet id="wux-actionsheet" />
+
+<view class="gallery-box wux-gallery">
+  <swiper
+    duration="{{duration}}"
+    class="wux-gallery__swiper"
+    bindanimationfinish="animationFinish"
+  >
+    <block wx:for="{{detailList}}" wx:key="index">
+      <swiper-item class="wux-gallery__item">
+        <image
+          mode="aspectFit"
+          class="wux-gallery__img"
+          src="{{item.image}}"
+          bindtap="onTap"
+          data-item="{{item}}"
+        />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="gallery-describe">
+    <view class="gallery-describe__tips">{{ currentData.desc }}</view>
+    <view class="gallery-describe__function clearfix">
+      <view class="basis__info float-left clearfix">
+        <view class="">{{ currentData.author }}</view>
+        <view class="">{{ currentData.time }}</view>
+      </view>
+      <view class="function float-right clearfix">
+        <view class="item float-left" bind:tap="onPraise">
+          <view class="iconfont icon-zan3"></view>
+          <view class="">{{ currentData.praise }}</view>
+        </view>
+        <view class="item float-left" bind:tap="onComments">
+          <view class="iconfont icon-pinglun"></view>
+          <view class="">{{ currentData.comments }}</view>
+        </view>
+
+        <view class="item float-left">
+          <view class="iconfont icon-more-br"></view>
+          <view class="">赏析</view>
+        </view>
+        <view class="item float-left">
+          <view class="iconfont icon-combinedshapecopy2"></view>
+          <view class="">摹写</view>
+        </view>
+      </view>
+    </view>
+  </view>
 
 </view>

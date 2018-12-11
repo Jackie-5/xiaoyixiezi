@@ -15,7 +15,7 @@ page {
   left:0;
   bottom: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 800;
   color: #fff;
   font-size:12px;
 }
@@ -39,4 +39,35 @@ page {
 
 .gallery-describe__function .function .item .iconfont {
   font-size: 14px;
+}
+
+.wux-gallery {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
+.wux-gallery__swiper {
+  width: 100%;
+  height: 100%
+}
+
+.wux-gallery__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.wux-gallery__img {
+  -ms-flex: none;
+  flex: none;
+  width: 100%;
+  height: 100%
 }

@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "wux-gallery": "../../dist/gallery-custom/index"
+    "wux-actionsheet": "./actionsheet/index"
   },
   "enablePullDownRefresh": false,
   "disableScroll":true,
