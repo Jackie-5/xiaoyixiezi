@@ -1,6 +1,5 @@
 import fetch from '../../utils/fetch';
 import requestConfig from "../../utils/config/request";
-import { $wuxActionSheet } from '../../dist/index';
 
 const { getInfoList } = requestConfig.workDetail;
 
@@ -71,20 +70,8 @@ Page({
 
   onComments() {
     const { currentData } = this.data;
-    console.log('123123');
-    $wuxActionSheet().showSheet({
-      theme: 'wx',
-      titleText: '三秒后自动关闭',
-      buttons: [{
-        text: '实例菜单'
-      },
-        {
-          text: '实例菜单'
-        },
-      ],
-      buttonClicked(index, item) {
-        return true
-      },
+    wx.navigateTo({
+      url: '/pages/comments/index?id=xxx'
     })
   }
 

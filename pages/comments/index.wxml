@@ -1,0 +1,66 @@
+<!-- index.wxml -->
+<view class="comments-box">
+  <view class="clearfix">
+    <view class="comments-box__img float-left">
+      <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg" />
+    </view>
+    <view class="comments-box__content">
+      <view class="comments-box__content__title">隆盛科技逢</view>
+      <view class="comments-box__content__desc">隆盛科技逢狼时刻解放路刷卡缴费阿斯利康打飞机萨拉快递费</view>
+      <view class="photo-box">
+        <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg" />
+      </view>
+    </view>
+  </view>
+
+  <wux-cell-group>
+    <wux-cell class="clearfix comments-list-box">
+      <view class="float-left comments-photo">
+        <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg" />
+      </view>
+      <view class="comments-list">
+        <view class="comments-list__title">标题标题</view>
+        <view class="comments-list__desc">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</view>
+      </view>
+    </wux-cell>
+    <wux-cell class="clearfix comments-list-box">
+      <view class="float-left comments-photo">
+        <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg" />
+      </view>
+      <view class="comments-list">
+        <view class="comments-list__title">标题标题</view>
+        <view class="comments-list__desc">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</view>
+      </view>
+    </wux-cell>
+    <wux-cell class="clearfix comments-list-box">
+      <view class="float-left comments-photo">
+        <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg" />
+      </view>
+      <view class="comments-list">
+        <view class="comments-list__title">标题标题</view>
+        <view class="comments-list__desc">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</view>
+      </view>
+    </wux-cell>
+    <wux-cell class="clearfix comments-list-box">
+      <view class="float-left comments-photo">
+        <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg" />
+      </view>
+      <view class="comments-list">
+        <view class="comments-list__title">标题标题</view>
+        <view class="comments-list__desc">描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述</view>
+      </view>
+    </wux-cell>
+  </wux-cell-group>
+
+  <view class="write-comments">
+    <view class="clearfix" style="padding:0 5px;">
+      <view class="float-right write-comments__btn">
+        <wux-button block size="small" type="balanced">发送</wux-button>
+      </view>
+      <input
+        class="write-comments__input"
+        placeholder="留言"
+      />
+    </view>
+  </view>
+</view>
