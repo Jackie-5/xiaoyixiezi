@@ -1,0 +1,34 @@
+<!-- index.wxml -->
+<view class="add-work-next">
+  <view class="">
+    <wux-checkbox-group name="a" value="{{ value1 }}" title="请选择您的字体" bind:change="onChange1">
+      <wux-checkbox
+        style="font-size: 14px;"
+        color="energized"
+        title="小乙写字"
+        value="10"
+        extra="会员"
+      />
+    </wux-checkbox-group>
+
+  </view>
+
+  <view class="work-next">
+    <view style="padding: 0 10px">
+      <wux-row gutter="10">
+        <wux-col span="24">
+          <wux-button
+            block
+            size="small"
+            type="balanced"
+            outline
+            bind:click="nextClick"
+          >
+            开始书写
+            <view class="iconfont icon-caretdown-copy"></view>
+          </wux-button>
+        </wux-col>
+      </wux-row>
+    </view>
+  </view>
+</view>

@@ -86,28 +86,14 @@
       position="bottom"
       theme="is_theme"
     >
-      <wux-tabbar-item title="首页">
+      <wux-tabbar-item
+        title="{{ item.name }}"
+        wx:for="{{ functionData }}"
+        wx:for-item="item"
+        wx:key="index"
+      >
         <wux-badge slot="icon-on">
-          <wux-icon type="ios-home" size="22" />
-        </wux-badge>
-        <wux-badge slot="icon-off">
-          <wux-icon type="ios-home" size="22" />
-        </wux-badge>
-      </wux-tabbar-item>
-      <wux-tabbar-item title="粗细">
-        <wux-badge slot="icon-on">
-          <wux-icon type="ios-add" size="22" />
-        </wux-badge>
-        <wux-badge slot="icon-off">
-          <wux-icon type="ios-add" size="22" />
-        </wux-badge>
-      </wux-tabbar-item>
-      <wux-tabbar-item title="颜色">
-        <wux-badge slot="icon-on">
-          <wux-icon type="ios-person" size="22" />
-        </wux-badge>
-        <wux-badge slot="icon-off">
-          <wux-icon type="ios-person" size="22" />
+          <view class="iconfont {{ item.icon }}" style="font-size: 18px; color: {{ item.color }}" />
         </wux-badge>
       </wux-tabbar-item>
     </wux-tabbar>

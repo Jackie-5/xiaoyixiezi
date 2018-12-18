@@ -1,7 +1,8 @@
 {
   "pages":[
-    "pages/addWork/index",
     "pages/enjoy/index",
+    "pages/addWorkNext/index",
+    "pages/addWork/index",
     "pages/workDetail/index",
     "pages/comments/index",
     "pages/workEnjoy/index",

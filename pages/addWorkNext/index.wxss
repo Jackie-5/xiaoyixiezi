@@ -1,0 +1,27 @@
+/**index.wxss**/
+
+.add-work-next{
+  background: #f4f4f4;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.add-work-next .input{
+  background:#fff;
+}
+
+
+.work-next {
+  position:fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 50px;
+  z-index: 99;
+  background:#fff;
+  border-top: 1px solid #ececec;
+}
+.work-next .iconfont {
+  font-size: 12px;
+  display: inline-block;
+}
