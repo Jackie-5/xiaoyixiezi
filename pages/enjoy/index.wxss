@@ -63,8 +63,34 @@
 }
 .enjoy-box__card .content {
   position: relative;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.enjoy-box__card .content-box {
+  max-width: 60%;
+  margin-left: 60px;
 }
 
+.enjoy-box__card .content .voice {
+  position: relative;
+  width: 30%;
+}
+
+.scale-box {
+  transform: scale(0.4);
+  position: absolute;
+  top: -11px;
+  left: 5px;
+}
+
+.enjoy-box__card .content-box .seconds {
+  position: absolute;
+  top:4px;
+  right:14px;
+  z-index: 99;
+  font-size: 14px;
+  color: #999;
+}
 
 .wifi-symbol {
   width: 50px;
@@ -72,8 +98,8 @@
   box-sizing: border-box;
   overflow: hidden;
   transform: rotate(135deg);
-
 }
+
 .wifi-circle {
   border: 3px solid #999999;
   border-radius: 50%;
@@ -90,8 +116,8 @@
 }
 
 .second {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   top: 35px;
   left: 35px;
   animation: fadeInOut 1s infinite 0.2s;.
@@ -112,4 +138,21 @@
   100% {
     opacity: 1; /*结尾状态 透明度为1*/
   }
+}
+
+.function-icon {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.function-icon .iconfont {
+  display: inline-block;
+  font-size: 14px;
+  color: #999;
+}
+.function-icon .number {
+  display: inline-block;
+  font-size:14px;
+  color:#999;
+  margin-left: 5px;
 }

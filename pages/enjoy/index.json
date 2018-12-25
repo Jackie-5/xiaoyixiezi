@@ -4,7 +4,9 @@
     "wux-wing-blank": "../../dist/wing-blank/index",
     "wux-white-space": "../../dist/white-space/index",
     "wux-refresher": "../../dist/refresher/index",
-    "wux-button": "../../dist/button/index"
+    "wux-button": "../../dist/button/index",
+    "wux-row": "../../dist/row/index",
+    "wux-col": "../../dist/col/index"
   },
   "enablePullDownRefresh": false
 }
