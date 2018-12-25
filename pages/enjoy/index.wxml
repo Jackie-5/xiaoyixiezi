@@ -15,13 +15,15 @@
   <view class="enjoy-box__tags">
     <wux-segmented-control
       theme="is_theme"
-      current="true"
-      controlled=""
+      current="{{ nowTabKey }}"
+      controlled="{{ true }}"
       values="{{ tabs }}"
       bind:change="tabsChange"
     />
   </view>
-  <view>
+  <view
+    wx:if="{{ nowTabKey === '0' }}"
+  >
 
     <swiper
       indicator-dots="{{indicatorDots}}"
@@ -44,6 +46,59 @@
       </block>
     </swiper>
 
+  </view>
+  <view
+    wx:if="{{ nowTabKey === '1' }}"
+  >
+    <swiper
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+      circular="{{circular}}"
+      bindanimationfinish="swiperAnimatEnd"
+    >
+      <block
+        wx:for="{{character}}"
+        wx:key="index"
+      >
+        <swiper-item class="swiper-font">
+          <wux-wing-blank size="large">
+            <view>
+              <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg"></image>
+            </view>
+          </wux-wing-blank>
+
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view
+    wx:if="{{ nowTabKey === '2' }}"
+  >
+    <wux-refresher id="wux-refresher" bind:pulling="onPulling" bind:refresh="onRefresh">
+      <wux-wing-blank size="large">
+        <view class="enjoy-box__card">
+          <view class="clearfix">
+            <view class="photo float-left">
+              <image src="http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg"></image>
+            </view>
+            <view class="float-left right-text">
+              <view class="name">Jackie.Wu</view>
+              <view class="time">发表于 2018-01-01</view>
+            </view>
+          </view>
+          <view class="content">
+            <view class="wifi-symbol">
+              <view class="wifi-circle first"></view>
+              <view class="wifi-circle second"></view>
+              <view class="wifi-circle third"></view>
+            </view>
+          </view>
+        </view>
+      </wux-wing-blank>
+    </wux-refresher>
   </view>
 
 </view>

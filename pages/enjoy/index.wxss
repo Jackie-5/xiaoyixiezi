@@ -1,9 +1,10 @@
 /**index.wxss**/
 
 .enjoy-box {
-  background:#fff;
+  background: #fff;
   height: 100%;
 }
+
 .enjoy-box .gushi {
   text-align: center;
   padding: 10px 0;
@@ -12,13 +13,16 @@
 .enjoy-box .gushi .gushi__title {
 
 }
+
 .enjoy-box .gushi .gushi__author {
 
 }
+
 .enjoy-box .gushi .gushi__item {
   width: 50%;
   text-align: right;
 }
+
 .enjoy-box .gushi .gushi__item:nth-child(2n) {
   text-align: left;
 }
@@ -26,6 +30,86 @@
 .enjoy-box__tags {
   margin-top: 10px;
 }
+
 .swiper-font {
   font-size: 14px;
+}
+
+.enjoy-box__card {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.enjoy-box__card .photo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.enjoy-box__card .right-text {
+  margin-left: 15px;
+}
+
+
+.enjoy-box__card .right-text .name {
+  font-size:16px;
+}
+
+.enjoy-box__card .right-text .time {
+  font-size:12px;
+  color: #999;
+}
+.enjoy-box__card .content {
+  position: relative;
+}
+
+
+.wifi-symbol {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: rotate(135deg);
+
+}
+.wifi-circle {
+  border: 3px solid #999999;
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+.first {
+  width: 5px;
+  height: 5px;
+  background: #cccccc;
+  top: 45px;
+  left: 45px;
+}
+
+.second {
+  width: 25px;
+  height: 25px;
+  top: 35px;
+  left: 35px;
+  animation: fadeInOut 1s infinite 0.2s;.
+}
+
+.third {
+  width: 40px;
+  height: 40px;
+  top: 25px;
+  left: 25px;
+  animation: fadeInOut 1s infinite 0.4s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1; /*结尾状态 透明度为1*/
+  }
 }

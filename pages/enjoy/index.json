@@ -2,7 +2,9 @@
   "usingComponents": {
     "wux-segmented-control": "../../dist/segmented-control/index",
     "wux-wing-blank": "../../dist/wing-blank/index",
-    "wux-white-space": "../../dist/white-space/index"
+    "wux-white-space": "../../dist/white-space/index",
+    "wux-refresher": "../../dist/refresher/index",
+    "wux-button": "../../dist/button/index"
   },
   "enablePullDownRefresh": false
 }
