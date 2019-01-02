@@ -107,39 +107,6 @@
 }
 
 
-.first {
-  width: 5px;
-  height: 5px;
-  background: #cccccc;
-  top: 45px;
-  left: 45px;
-}
-
-.second {
-  width: 20px;
-  height: 20px;
-  top: 35px;
-  left: 35px;
-  animation: fadeInOut 1s infinite 0.2s;.
-}
-
-.third {
-  width: 40px;
-  height: 40px;
-  top: 25px;
-  left: 25px;
-  animation: fadeInOut 1s infinite 0.4s;
-}
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0; /*初始状态 透明度为0*/
-  }
-  100% {
-    opacity: 1; /*结尾状态 透明度为1*/
-  }
-}
-
 .function-icon {
   margin-top: 8px;
   text-align: center;

@@ -109,16 +109,29 @@
       bind:close="popupClose"
       data-closeKey="colorPopShow"
     >
-      <wux-grids col="5">
-        <wux-grid
+      <view
+        class="popup-colors-box"
+        wx:if="{{ openKey === 'color' }}"
+      >
+        <view
           wx:for="{{ writeColor }}"
           wx:key="item"
-        >
-          <div
-            style="background:{{ item }}; width:80%; height:80%;"
-          >sdfaf</div>
-        </wux-grid>
-      </wux-grids>
+          data-color="{{ item }}"
+          class="popup-colors float-left"
+          style="background:{{ item }};"
+          bind:tap="colorTab"
+        />
+      </view>
+
+      <view
+        class="popup-colors-box"
+        wx:if="{{ openKey === 'bold' }}"
+      >
+        <wux-slider
+          defaultValue="{{ [12] }}"
+          bind:afterChange="sliderChange"
+        />
+      </view>
     </wux-popup>
 
 

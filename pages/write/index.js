@@ -44,6 +44,7 @@ Page({
     colorPopShow: false,
     writeColor: ['#666666', '#999999', '#3fb1e3', '#6be6c1', '#626c91', '#a0a7e6', '#c4ebad', '#96dee8'],
     canvasPenColor: '#666666',
+    openKey: '',
   },
   onReady() {
     this.canvas = getCurrentPages()[getCurrentPages().length - 1].selectComponent('#canvas-container');
@@ -58,11 +59,13 @@ Page({
 
   barBindTab: function (e) {
     const item = e.currentTarget.dataset.item;
+    const keyOpen = ['color', 'bold'];
     if (item.key === 'reload') {
       this.canvas.clearCanvas();
-    } else if (item.key === 'color') {
+    } else if (keyOpen.includes(item.key)) {
       this.setData({
         colorPopShow: true,
+        openKey: item.key,
       })
     }
   },
@@ -72,6 +75,17 @@ Page({
     this.setData({
       [key]: false,
     })
+  },
+
+  colorTab: function (e) {
+    this.setData({
+      canvasPenColor: e.target.dataset.color,
+      colorPopShow: false,
+    })
+  },
+
+  sliderChange: function (value, offsets) {
+    console.log(value, offsets)
   }
 
 });

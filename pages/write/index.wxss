@@ -156,3 +156,17 @@
   text-align: center;
   font-size:12px;
 }
+
+.wux-class {
+  background:#000;
+}
+
+.popup-colors-box {
+  padding: 10px;
+  height: 100px;
+}
+
+.popup-colors {
+  width: 20%;
+  height: 50px;
+}
