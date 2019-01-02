@@ -11,6 +11,10 @@
     </view>
   </view>
 
+  <view class="">
+
+  </view>
+
 
   <view class="enjoy-box__tags">
     <wux-segmented-control

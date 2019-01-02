@@ -38,7 +38,10 @@
         </view>
 
         <view class="write-canvas-p">
-          <canvas-container></canvas-container>
+          <canvas-container
+            id="canvas-container"
+            penColor="{{ canvasPenColor }}"
+          />
         </view>
         <view class="write-canvas-bg">
           <image
@@ -91,12 +94,32 @@
         wx:for="{{ functionData }}"
         wx:for-item="item"
         wx:key="index"
+        bind:tap="barBindTab"
+        data-item="{{ item }}"
       >
         <wux-badge slot="icon-on">
           <view class="iconfont {{ item.icon }}" style="font-size: 18px; color: {{ item.color }}" />
         </wux-badge>
       </wux-tabbar-item>
     </wux-tabbar>
+
+    <wux-popup
+      position="bottom"
+      visible="{{ colorPopShow }}"
+      bind:close="popupClose"
+      data-closeKey="colorPopShow"
+    >
+      <wux-grids col="5">
+        <wux-grid
+          wx:for="{{ writeColor }}"
+          wx:key="item"
+        >
+          <div
+            style="background:{{ item }}; width:80%; height:80%;"
+          >sdfaf</div>
+        </wux-grid>
+      </wux-grids>
+    </wux-popup>
 
 
   </view>

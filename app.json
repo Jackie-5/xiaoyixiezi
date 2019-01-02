@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/write/index",
     "pages/enjoy/index",
     "pages/addWorkNext/index",
     "pages/addWork/index",
@@ -10,8 +11,8 @@
     "pages/otherWorks/index",
     "pages/index/index",
     "pages/selectFont/index",
-    "pages/isMy/index",
-    "pages/write/index"
+    "pages/isMy/index"
+
   ],
   "window":{
     "backgroundTextStyle":"dark",

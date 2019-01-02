@@ -14,8 +14,8 @@ Component({
       value: 'canvas-container',
     },
     currentHeight: {
-      type: String,
-      value: `${(wx.getSystemInfoSync().windowHeight - MARGIN_HEIGHT) / 3 * 2}px`,
+      type: Number,
+      value: (wx.getSystemInfoSync().windowHeight - MARGIN_HEIGHT) / 3 * 2,
     },
     penColor: {
       type: String,
@@ -30,11 +30,11 @@ Component({
     this.initCanvas();
   },
   methods: {
-    changePenColor() {
-      this.setData({
-        penColor: ''
-      })
-    },
+    // changePenColor() {
+    //   this.setData({
+    //     penColor: ''
+    //   })
+    // },
     initCanvas() {
       const { container, containerBg, canvasWidth } = this.data;
       this.writeCtx = wx.createCanvasContext(container, this);
@@ -84,8 +84,8 @@ Component({
         success: (b) => {
           // 背景RGBA 色值
           for (var c = 0; c < b.data.length; c += 4) {
-            if (0 != b.data[c + 3] && (b.data[c] = 100)) {
-              b.data[c + 0] = 18;
+            if (0 !== b.data[c + 3] && (b.data[c] = 100)) {
+              b.data[c] = 18;
               b.data[c + 1] = 65;
               b.data[c + 2] = 111;
               b.data[c + 3] = Math.round(1 * b.data[c + 3])
@@ -198,6 +198,15 @@ Component({
       this.writeCtx.fill();
       this.writeCtx.closePath();
       this.writeCtx.draw(true)
+    },
+
+    clearCanvas() {
+      const { canvasWidth, currentHeight } = this.data;
+      this.writeCtx.clearRect(0, 0, canvasWidth, currentHeight);
+      this.bgCanvas.clearRect(0, 0, canvasWidth, currentHeight);
+      this.writeCtx.draw();
+      this.bgCanvas.draw();
     }
+
   }
 });
