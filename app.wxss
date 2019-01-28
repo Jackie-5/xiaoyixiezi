@@ -2,6 +2,7 @@
 @import './css/iconfont.wxss';
 @import './dist/styles/weui.wxss';
 @import './dist/styles/skyvow.wxss';
+
 .container {
   height: 100%;
   display: flex;

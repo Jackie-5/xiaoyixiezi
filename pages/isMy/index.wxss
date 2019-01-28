@@ -5,7 +5,7 @@ page {
 }
 
 .is-my{
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 }
 
 .is-my__box {

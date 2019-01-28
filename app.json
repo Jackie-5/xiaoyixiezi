@@ -6,7 +6,6 @@
     "pages/write/index",
     "pages/enjoy/index",
     "pages/addWorkNext/index",
-
     "pages/comments/index",
     "pages/workEnjoy/index",
     "pages/albumWorks/index",
@@ -22,21 +21,25 @@
     "navigationBarTextStyle":"white"
   },
   "tabBar": {
-    "color": "#000000",
-    "selectedColor": "#000000",
-    "backgroundColor": "#000000",
+    "color": "#999999",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#d69a52",
     "list": [
       {
-
+        "selectedIconPath": "images/s-home.png",
+        "iconPath": "images/home.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-
+        "selectedIconPath": "images/s-add.png",
+        "iconPath": "images/add.png",
         "pagePath": "pages/addWork/index",
-        "text": "写字"
+        "text": "摹写"
       },
       {
+        "selectedIconPath": "images/s-my.png",
+        "iconPath": "images/my.png",
         "pagePath": "pages/isMy/index",
         "text": "我的"
       }

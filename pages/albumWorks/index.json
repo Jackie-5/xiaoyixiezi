@@ -2,5 +2,5 @@
   "usingComponents": {
     "wux-divider": "../../dist/divider/index"
   },
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": false
 }
