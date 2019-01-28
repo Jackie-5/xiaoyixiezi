@@ -38,7 +38,19 @@
   <view class="work-next">
     <view style="padding: 0 10px">
       <wux-row gutter="10">
-        <wux-col span="6">
+        <wux-col span="4">
+          <wux-button
+            block
+            size="small"
+            type="stable"
+            outline
+            bind:tap="backHome"
+          >
+            <view class="iconfont icon-zuojiantou1"></view>
+            回首页
+          </wux-button>
+        </wux-col>
+        <wux-col span="4">
           <wux-button
             block
             size="small"
@@ -49,7 +61,7 @@
             搜索
           </wux-button>
         </wux-col>
-        <wux-col span="6">
+        <wux-col span="4">
           <wux-button
             block
             size="small"
@@ -57,7 +69,7 @@
             outline
           >
             下一步
-            <view class="iconfont icon-caretdown-copy"></view>
+            <view class="iconfont icon-youjiantou"></view>
           </wux-button>
         </wux-col>
       </wux-row>

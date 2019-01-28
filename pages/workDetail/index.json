@@ -3,5 +3,6 @@
   },
   "enablePullDownRefresh": false,
   "disableScroll":true,
-  "navigationBarBackgroundColor": "#000"
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTitleText": "小乙写字"
 }

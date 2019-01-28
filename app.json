@@ -1,15 +1,16 @@
 {
   "pages":[
+    "pages/index/index",
+    "pages/workDetail/index",
+    "pages/addWork/index",
     "pages/write/index",
     "pages/enjoy/index",
     "pages/addWorkNext/index",
-    "pages/addWork/index",
-    "pages/workDetail/index",
+
     "pages/comments/index",
     "pages/workEnjoy/index",
     "pages/albumWorks/index",
     "pages/otherWorks/index",
-    "pages/index/index",
     "pages/selectFont/index",
     "pages/isMy/index"
 
@@ -18,6 +19,27 @@
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#d69a52",
     "navigationBarTitleText": "小乙写字",
-    "navigationBarTextStyle":"#fff"
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+
+        "pagePath": "pages/addWork/index",
+        "text": "写字"
+      },
+      {
+        "pagePath": "pages/isMy/index",
+        "text": "我的"
+      }
+    ]
   }
 }

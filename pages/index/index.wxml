@@ -1,4 +1,5 @@
 <!-- index.wxml -->
+<tab-bar></tab-bar>
 <view class="xz-index">
   <view style="display:none">
     <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.imgUrl}}" bindload="onImageLoad"></image>
@@ -127,6 +128,4 @@
     </wux-divider>
 
   </view>
-
-  <footer></footer>
 </view>

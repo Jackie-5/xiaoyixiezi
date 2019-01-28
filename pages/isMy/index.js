@@ -65,5 +65,9 @@ Page({
     desc: '留下一句话留下一句话留下一句话留下一句话留下一句话留下一句话',
     photo: 'http://demo.sc.chinaz.com//Files/DownLoad/webjs1/201503/jiaoben3190/images/rustic-landscape.jpg'
   },
-
+  onShow() {
+    wx.showTabBar({
+      animation: true,
+    });
+  },
 });

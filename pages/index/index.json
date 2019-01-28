@@ -1,7 +1,6 @@
 {
   "usingComponents": {
-    "wux-divider": "../../dist/divider/index",
-    "footer": "../../utils/view-public/footer/index"
+    "wux-divider": "../../dist/divider/index"
   },
   "enablePullDownRefresh": true
 }

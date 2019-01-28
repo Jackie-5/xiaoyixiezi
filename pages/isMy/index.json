@@ -1,6 +1,5 @@
 {
   "usingComponents": {
-    "footer": "../../utils/view-public/footer/index"
   },
   "enablePullDownRefresh": true
 }

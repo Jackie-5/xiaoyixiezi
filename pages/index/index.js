@@ -90,7 +90,16 @@ Page({
     }
   },
 
-  onLoad: function () {
+  onShow() {
+    wx.showTabBar({
+      animation: true,
+    });
+  },
+  onReady() {
+
+  },
+
+  onLoad() {
     try {
       const systemInfo = wx.getSystemInfoSync();
       const ww = systemInfo.windowWidth;
@@ -263,10 +272,10 @@ Page({
   //   })
   // },
   gotoPage: function (e) {
-    console.log(e.currentTarget.dataset.item)
-    // wx.navigateTo({
-    //   url: ''
-    // })
+    // console.log(e.currentTarget.dataset.item)
+    wx.navigateTo({
+      url: `/pages/workDetail/index?nextItem=${e.currentTarget.dataset.item}`,
+    })
   },
 
   getAlbumList: function (callback) {

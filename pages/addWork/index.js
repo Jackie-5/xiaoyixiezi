@@ -1,5 +1,3 @@
-
-
 Page({
   data: {
     otherInfoList: [
@@ -25,5 +23,14 @@ Page({
       },
     ],
   },
-
+  onShow() {
+    wx.hideTabBar({
+      animation: true,
+    });
+  },
+  backHome() {
+    wx.switchTab({
+      url: '/pages/index/index',
+    })
+  }
 });
