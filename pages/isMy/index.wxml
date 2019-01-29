@@ -35,8 +35,14 @@
       wx:for-item="item"
       wx:key="index"
     >
-      <view class="iconfont {{item.icon}}"></view>
-      <view class="text">{{item.name}}</view>
+      <wux-button
+        block
+        type="stable"
+        prefixCls="card-button"
+      >
+        <view class="iconfont {{item.icon}}"></view>
+        <view class="text">{{item.name}}</view>
+      </wux-button>
     </view>
 
   </view>

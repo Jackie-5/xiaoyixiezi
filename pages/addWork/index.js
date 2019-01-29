@@ -7,18 +7,18 @@ Page({
         icon: 'icon-xiangji',
       },
       {
-        label: '语音录入',
+        label: '说一句话',
         key: 'voice',
         icon: 'icon-Voice',
       },
       {
-        label: '语音录入',
+        label: '写一段字',
         key: 'font',
         icon: 'icon-wenzi',
       },
       {
         label: '视频上传',
-        key: 'voice',
+        key: 'uploadVideo',
         icon: 'icon-shipin',
       },
     ],
@@ -31,6 +31,11 @@ Page({
   backHome() {
     wx.switchTab({
       url: '/pages/index/index',
+    })
+  },
+  nextStep() {
+    wx.navigateTo({
+      url: '/pages/write/index',
     })
   }
 });

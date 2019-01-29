@@ -59,12 +59,26 @@ page {
   padding: 0 5px 10px 5px;
 }
 
+
+.card-list .card-button {
+  background-color:#ffff;
+  color: #6d6d6d;
+  text-align: left;
+  border: 0;
+}
+.card-list .card-button:after {
+  display: none;
+}
+.card-list .card-button--hover {
+  background-color:#F8F8F8;
+  text-align: left;
+}
+
 .is-my .card-list .card-list__item{
-  width: 45%;
+  width: 49%;
   margin-left:2%;
   background:#fff;
   box-shadow: 0 0 2px 1px rgba(0,0,0, .1);
-  padding: 2%;
   margin-top: 10px;
   color: #6d6d6d;
 }
@@ -73,7 +87,9 @@ page {
 }
 
 .is-my .card-list .card-list__item .iconfont {
+  padding-top: 10px;
   font-size: 24px;
+  line-height:24px;
 }
 .is-my .card-list .card-list__item .text {
   font-size: 14px;

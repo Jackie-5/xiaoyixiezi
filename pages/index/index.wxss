@@ -64,7 +64,7 @@
 }
 
 .xz-body {
-  padding: 0 2% 51px 2%;
+  padding: 40px 2% 0 2%;
 }
 
 .xz-body .xz-body__list {

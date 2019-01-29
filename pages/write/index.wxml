@@ -127,10 +127,12 @@
         class="popup-colors-box"
         wx:if="{{ openKey === 'bold' }}"
       >
-        <wux-slider
-          defaultValue="{{ [12] }}"
-          bind:afterChange="sliderChange"
-        />
+        <wux-slider defaultValue="{{ [12] }}" bind:afterChange="sliderChange" />
+        <!--<wux-slider-->
+          <!---->
+          <!--defaultValue="{{ [12] }}"-->
+          <!--bind:afterChange="sliderChange"-->
+        <!--/>-->
       </view>
     </wux-popup>
 
