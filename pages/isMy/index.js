@@ -70,4 +70,17 @@ Page({
       animation: true,
     });
   },
+  cardClick(e) {
+    const item = e.currentTarget.dataset.item;
+
+    if (item.key === 'product') {
+      wx.navigateTo({
+        url: '/pages/otherWorks/index',
+      })
+    } else if (item.key === 'album') {
+      wx.navigateTo({
+        url: '/pages/albumWorks/index',
+      })
+    }
+  }
 });

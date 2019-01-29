@@ -3,21 +3,20 @@
     "pages/index/index",
     "pages/isMy/index",
     "pages/addWork/index",
+    "pages/addWorkNext/index",
     "pages/workDetail/index",
     "pages/write/index",
     "pages/enjoy/index",
-    "pages/addWorkNext/index",
+    "pages/albumWorks/index",
     "pages/comments/index",
     "pages/workEnjoy/index",
-    "pages/albumWorks/index",
+
     "pages/otherWorks/index",
     "pages/selectFont/index"
   ],
   "window":{
     "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#d69a52",
-    "navigationBarTitleText": "小乙写字",
-    "navigationBarTextStyle":"white"
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "color": "#999999",

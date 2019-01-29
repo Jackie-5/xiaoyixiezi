@@ -39,6 +39,8 @@
         block
         type="stable"
         prefixCls="card-button"
+        bind:click="cardClick"
+        data-item="{{ item }}"
       >
         <view class="iconfont {{item.icon}}"></view>
         <view class="text">{{item.name}}</view>

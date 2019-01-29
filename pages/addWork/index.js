@@ -35,7 +35,7 @@ Page({
   },
   nextStep() {
     wx.navigateTo({
-      url: '/pages/write/index',
+      url: '/pages/addWorkNext/index',
     })
   }
 });
