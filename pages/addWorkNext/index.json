@@ -3,9 +3,10 @@
     "wux-checkbox-group": "../../dist/checkbox-group/index",
     "wux-checkbox": "../../dist/checkbox/index",
     "wux-button": "../../dist/button/index",
-    "wux-icon": "../../dist/icon/index",
     "wux-row": "../../dist/row/index",
-    "wux-col": "../../dist/col/index"
+    "wux-col": "../../dist/col/index",
+    "wux-navbar": "../../dist/navbar/index",
+    "wux-icon": "../../dist/icon/index"
   },
   "enablePullDownRefresh": false
 }

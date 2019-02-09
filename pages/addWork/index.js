@@ -28,7 +28,7 @@ Page({
       animation: true,
     });
   },
-  backHome() {
+  backClick() {
     wx.switchTab({
       url: '/pages/index/index',
     })

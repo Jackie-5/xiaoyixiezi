@@ -73,6 +73,9 @@ Page({
     wx.navigateTo({
       url: '/pages/comments/index?id=xxx'
     })
-  }
+  },
+  backClick() {
+    wx.navigateBack()
+  },
 
 });

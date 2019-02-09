@@ -2,6 +2,8 @@
 @import './css/iconfont.wxss';
 @import './dist/styles/weui.wxss';
 @import './dist/styles/skyvow.wxss';
+@import './css/nav.wxss';
+@import './css/btn.wxss';
 
 .container {
   height: 100%;

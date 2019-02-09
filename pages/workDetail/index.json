@@ -1,5 +1,7 @@
 {
   "usingComponents": {
+    "wux-navbar": "../../dist/navbar/index",
+    "wux-icon": "../../dist/icon/index"
   },
   "enablePullDownRefresh": false,
   "disableScroll":true,

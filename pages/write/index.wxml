@@ -1,4 +1,12 @@
 <!-- index.wxml -->
+<wux-navbar
+  prefixCls="custom-nav"
+  theme="orange"
+  bind:click="backClick"
+>
+  <wux-icon slot="left" type="ios-arrow-back" size="21" />
+  <view>书写</view>
+</wux-navbar>
 <view class="write-container">
   <view class="write-container__cbg"></view>
 

@@ -1,4 +1,10 @@
 <!-- index.wxml -->
+<wux-navbar
+  prefixCls="custom-nav"
+  theme="orange"
+>
+  <view>我的</view>
+</wux-navbar>
 <view class="is-my">
   <view
     class="is-my__header clearfix"

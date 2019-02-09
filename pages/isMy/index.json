@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "wux-button": "../../dist/button/index"
+    "wux-button": "../../dist/button/index",
+    "wux-navbar": "../../dist/navbar/index"
   },
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": false
 }

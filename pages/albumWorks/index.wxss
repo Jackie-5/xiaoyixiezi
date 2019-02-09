@@ -3,6 +3,7 @@
 .xz-index {
   background: #f4f4f4;
   overflow: hidden;
+  padding-top: 64px;
 }
 
 .xz-index__header {

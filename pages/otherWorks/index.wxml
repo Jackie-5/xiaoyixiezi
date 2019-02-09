@@ -1,4 +1,12 @@
 <!-- index.wxml -->
+<wux-navbar
+  prefixCls="custom-nav"
+  theme="orange"
+  bind:click="backClick"
+>
+  <wux-icon slot="left" type="ios-arrow-back" size="21" />
+  <view>XX的作品</view>
+</wux-navbar>
 <view class="xz-index clearfix">
   <view style="display:none">
     <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.imgUrl}}" bindload="onImageLoad"></image>
@@ -36,55 +44,7 @@
     </view>
   </view>
   <view class="xz-body float-left">
-    <view class="xz-body__list">
-      <view class="xz-body__list__item">
-        <view
-          class="xz-body__list__item__img"
-          wx:for="{{col1}}"
-          wx:key="id"
-          bind:tap="gotoPage"
-          data-item="{{item}}"
-        >
-          <view class="title">{{item.title}} {{item.author}}</view>
-          <view class="bottom clearfix">
-            <!--<view class="name float-left">{{item.write_author}}</view>-->
-            <view class="zan float-right clearfix">
-              <view class="iconfont icon-zan3 float-left"></view>
-              <view class="float-left">{{item.praise}}</view>
-            </view>
-          </view>
-          <view class="bg" style="width:100%;height:{{item.height}}px"></view>
-          <image lazy-load="true" src="{{item.imgUrl}}" style="width:100%;height:{{item.height}}px"></image>
-        </view>
-      </view>
-      <view class="xz-body__list__item">
-        <view
-          class="xz-body__list__item__img"
-          wx:for="{{col2}}"
-          wx:key="id"
-          bind:tap="gotoPage"
-          data-item="{{item}}"
-        >
-          <view class="title">{{item.title}} {{item.author}}</view>
-          <view class="bottom clearfix">
-            <!--<view class="name float-left">{{item.write_author}}</view>-->
-            <view class="zan float-right clearfix">
-              <view class="iconfont icon-zan3 float-left"></view>
-              <view class="float-left">{{item.praise}}</view>
-            </view>
-          </view>
-          <view class="bg" style="width:100%;height:{{item.height}}px"></view>
-          <image lazy-load="true" src="{{item.imgUrl}}" style="width:100%;height:{{item.height}}px"></image>
-        </view>
-      </view>
-    </view>
-
-    <wux-divider>
-      <view class="loadmore">
-        <view wx:if="{{loading.load}}" class="weui-loading"></view>
-        <text class="text">{{loading.tip}}</text>
-      </view>
-    </wux-divider>
+    <utils-pinterest id="pinterest-container" />
   </view>
 
 </view>

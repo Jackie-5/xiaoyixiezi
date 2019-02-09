@@ -3,6 +3,7 @@
 .xz-index {
   background: #f4f4f4;
   overflow: hidden;
+  padding-top: 64px;
 }
 
 .xz-index__header {
@@ -85,10 +86,7 @@
 }
 
 .xz-body {
-  width: 96%;
-  margin-top: 10px;
-  padding: 0 2% 11px 2%;
-  background: #fff;
+  padding: 0 2% 0 2%;
 }
 
 .xz-body .xz-body__list {
@@ -112,13 +110,7 @@
   position: relative;
 }
 
-.xz-body .xz-body__list .xz-body__list__item .xz-body__list__item__img .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background: rgba(0, 0, 0, 0.3);
-}
+
 
 .xz-body .xz-body__list .xz-body__list__item .xz-body__list__item__img .title {
   position: absolute;
@@ -135,7 +127,7 @@
 
 .xz-body .xz-body__list .xz-body__list__item .xz-body__list__item__img .bottom {
   position: absolute;
-  bottom: 0;
+  bottom: 7px;
   left: 0;
   z-index: 2;
   font-size: 12px;
@@ -143,15 +135,35 @@
 }
 
 .xz-body .xz-body__list .xz-body__list__item .xz-body__list__item__img .bottom .name {
-  padding: 10px;
+  padding: 5px 5px 3px 5px;
+  z-index: 99;
+  position: relative;
+  max-width: 65%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .xz-body .xz-body__list .xz-body__list__item .xz-body__list__item__img .bottom .zan {
-  padding: 10px;
+  padding:5px 5px 3px 5px;
+  z-index: 99;
+  position: relative;
+  font-size: 12px;
 }
 
 .xz-body .xz-body__list .xz-body__list__item .xz-body__list__item__img .bottom .zan .iconfont {
   margin-right: 5px;
-  font-size: 12px;
-  margin-top: 2px;
+  font-size: 11px;
+  z-index: 99;
+  position: relative;
+  font-weight: bold;
+}
+
+.xz-body .xz-body__list .xz-body__list__item .xz-body__list__item__img .bottom .bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }

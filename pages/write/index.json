@@ -1,12 +1,13 @@
 {
   "usingComponents": {
     "canvas-container": "../../../utils/view-public/canvas/index",
-    "wux-icon": "../../dist/icon/index",
     "wux-badge": "../../dist/badge/index",
     "wux-tabbar": "../../dist/tabbar/index",
     "wux-tabbar-item": "../../dist/tabbar-item/index",
     "wux-button": "../../dist/button/index",
     "wux-popup": "../../dist/popup/index",
-    "wux-slider": "../../dist/slider/index"
+    "wux-slider": "../../dist/slider/index",
+    "wux-navbar": "../../dist/navbar/index",
+    "wux-icon": "../../dist/icon/index"
   }
 }

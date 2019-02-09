@@ -4,6 +4,7 @@
   background: #f4f4f4;
   overflow: hidden;
   padding-bottom: 50px;
+  padding-top: 64px;
 }
 
 .add-work-next .input{

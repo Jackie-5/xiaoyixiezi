@@ -1,8 +1,9 @@
 {
-  "navigationBarTitleText": "小乙写字",
   "usingComponents": {
     "wux-divider": "../../dist/divider/index",
-    "wux-refresher": "../../dist/refresher/index"
+    "wux-refresher": "../../dist/refresher/index",
+    "wux-navbar": "../../dist/navbar/index",
+    "utils-pinterest": "../../utils/view-public/pinterest/index"
   },
   "enablePullDownRefresh": true
 }

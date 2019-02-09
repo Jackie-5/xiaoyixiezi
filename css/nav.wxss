@@ -1,0 +1,96 @@
+.custom-nav {
+  height: 44px;
+  background-color: #fff;
+  color: #444;
+  padding-top: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.custom-nav--dark {
+  background-color: #000;
+  color: #fff
+}
+.custom-nav--custom-dark {
+  background-color: #000;
+  color: #fff
+}
+
+.custom-nav--orange {
+  background-color: #d69a52;
+  color: #fff
+}
+
+.custom-nav__left, .custom-nav__right, .custom-nav__title {
+  display: block;
+  float:left;
+  line-height: 44px;
+}
+
+.custom-nav__left {
+  font-size:23px;
+  padding:0 10px 0 15px;
+}
+
+.custom-nav__title {
+  margin-left: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.custom-nav__right {
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-size: 28prx;
+  margin-right: 20prx
+}
+
+.custom-nav--light, .custom-nav--stable {
+  color: #444 !important
+}
+
+.custom-nav--light {
+  background-color: #fff;
+  color: #fff
+}
+
+.custom-nav--stable {
+  background-color: #f8f8f8;
+  color: #fff
+}
+
+.custom-nav--positive {
+  background-color: #387ef5;
+  color: #fff
+}
+
+.custom-nav--calm {
+  background-color: #11c1f3;
+  color: #fff
+}
+
+.custom-nav--assertive {
+  background-color: #ef473a;
+  color: #fff
+}
+
+.custom-nav--balanced {
+  background-color: #33cd5f;
+  color: #fff
+}
+
+.custom-nav--energized {
+  background-color: #ffc900;
+  color: #fff
+}
+
+.custom-nav--royal {
+  background-color: #886aea;
+  color: #fff
+}
+
+.custom-nav--dark {
+  background-color: #444;
+  color: #fff
+}

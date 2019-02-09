@@ -1,4 +1,12 @@
 <!-- index.wxml -->
+<wux-navbar
+  prefixCls="custom-nav"
+  theme="orange"
+  bind:click="backClick"
+>
+  <wux-icon slot="left" type="ios-arrow-back" size="21" />
+  <view>内容录入</view>
+</wux-navbar>
 <view class="add-work">
   <view class="">
     <wux-cell-group title="基础信息">
@@ -83,19 +91,7 @@
   <view class="work-next">
     <view style="padding: 0 10px">
       <wux-row gutter="10">
-        <wux-col span="4">
-          <wux-button
-            block
-            size="small"
-            type="stable"
-            outline
-            bind:tap="backHome"
-          >
-            <view class="iconfont icon-zuojiantou1"></view>
-            回首页
-          </wux-button>
-        </wux-col>
-        <wux-col span="4">
+        <wux-col span="6">
           <wux-button
             block
             size="small"
@@ -106,13 +102,13 @@
             搜索
           </wux-button>
         </wux-col>
-        <wux-col span="4">
+        <wux-col span="6">
           <wux-button
             block
             size="small"
-            type="balanced"
             outline
             bind:click="nextStep"
+            type="orange"
           >
             下一步
             <view class="iconfont icon-youjiantou"></view>

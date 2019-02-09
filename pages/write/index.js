@@ -45,6 +45,7 @@ Page({
     writeColor: ['#666666', '#999999', '#3fb1e3', '#6be6c1', '#626c91', '#a0a7e6', '#c4ebad', '#96dee8'],
     canvasPenColor: '#666666',
     openKey: '',
+    backUrl: '',
   },
   onReady() {
     this.canvas = getCurrentPages()[getCurrentPages().length - 1].selectComponent('#canvas-container');
@@ -55,6 +56,12 @@ Page({
   },
   handleChange: function(e){
 
+  },
+
+  onLoad(option) {
+    this.setData({
+      backUrl: option.redirect
+    });
   },
 
   barBindTab: function (e) {
@@ -86,6 +93,14 @@ Page({
 
   sliderChange: function (value, offsets) {
     console.log(value, offsets)
+  },
+
+  backClick: function () {
+    if (this.data.backUrl) {
+      wx.switchTab({
+        url: this.data.backUrl
+      });
+    }
   }
 
 });

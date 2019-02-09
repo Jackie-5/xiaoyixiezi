@@ -1,6 +1,9 @@
 {
   "usingComponents": {
-    "wux-divider": "../../dist/divider/index"
+    "wux-divider": "../../dist/divider/index",
+    "wux-navbar": "../../dist/navbar/index",
+    "wux-icon": "../../dist/icon/index",
+    "utils-pinterest": "../../utils/view-public/pinterest/index"
   },
   "enablePullDownRefresh": true
 }

@@ -1,4 +1,5 @@
 <!-- index.wxml -->
+
 <view class="enjoy-box">
   <view class="gushi">
     <view class="gushi__title">静夜思</view>

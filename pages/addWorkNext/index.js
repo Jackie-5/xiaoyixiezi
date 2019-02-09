@@ -8,8 +8,10 @@ Page({
   },
   nextClick: () => {
     wx.navigateTo({
-      url: '/pages/write/index'
+      url: '/pages/write/index?redirect=/pages/index/index'
     });
+  },
+  backClick: () => {
+    wx.navigateBack()
   }
-
 });

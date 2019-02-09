@@ -1,4 +1,13 @@
 <!-- index.wxml -->
+<wux-navbar
+  prefixCls="custom-nav"
+  theme="orange"
+  bind:click="backClick"
+>
+  <wux-icon slot="left" type="ios-arrow-back" size="21" />
+  <view>选择字体</view>
+</wux-navbar>
+
 <view class="add-work-next">
   <view class="">
     <wux-checkbox-group name="a" value="{{ value1 }}" title="请选择您的字体" bind:change="onChange1">
@@ -20,8 +29,7 @@
           <wux-button
             block
             size="small"
-            type="balanced"
-            outline
+            type="orange"
             bind:click="nextClick"
           >
             开始书写

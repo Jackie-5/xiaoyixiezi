@@ -1,0 +1,21 @@
+.wux-button--orange {
+  border-color: transparent!important;
+  background-color: #d69a52!important;
+  color: #fff!important
+}
+
+.wux-button--orange.wux-button--outline {
+  border-color: #d69a52!important;
+  background-color: transparent!important;
+  color: #d69a52!important
+}
+
+.wux-button--orange.wux-button--clear.wux-button--hover {
+  background-color: rgba(0, 0, 0, 0)!important;
+  color: #fff!important
+}
+
+.wux-button--orange.wux-button--hover {
+  background-color: #d69a52!important;
+  color: #ddd!important
+}
