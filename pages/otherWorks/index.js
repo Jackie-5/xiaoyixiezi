@@ -30,6 +30,7 @@ Page({
   onPullDownRefresh: function () {
     wx.showNavigationBarLoading();
     nowPageIndex = 1;
+    this.pinterest.reload();
     this.loadImages(function () {
       wx.stopPullDownRefresh();
       wx.hideNavigationBarLoading();

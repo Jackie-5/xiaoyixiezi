@@ -14,7 +14,6 @@ Component({
       tip: '数据加载中',
       load: true
     },
-    nowPageIndex: 1,
   },
   properties: {
 
@@ -33,6 +32,13 @@ Component({
     }
   },
   methods: {
+    reload: function() {
+      this.setData({
+        images: [],
+        col1: [],
+        col2: []
+      });
+    },
     onImageLoad: function (e) {
       let imageId = e.currentTarget.id;
       const oImgW = e.detail.width;         //图片原始宽度
@@ -71,7 +77,6 @@ Component({
         col1: col1,
         col2: col2
       };
-
       if (!loadingCount) {
         data.images = [];
       }
@@ -82,7 +87,6 @@ Component({
     loadImages: function (newVal, isEnd) {
       const { col1, col2 } = this.data;
       const images = [...this.data.images, ...newVal.data];
-
       let baseId = `img-${+new Date()}`;
 
       for (let i = 0; i < images.length; i++) {

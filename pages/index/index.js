@@ -66,6 +66,7 @@ Page({
     nowPageIndex = 1;
     wx.showNavigationBarLoading();
     if (nowTagLeft.key === 'opus') {
+      this.pinterest.reload();
       this.loadImages(function () {
         wx.stopPullDownRefresh();
         wx.hideNavigationBarLoading();
