@@ -179,9 +179,10 @@ Page({
   //   })
   // },
   gotoPage: function (e) {
+    console.log(e.detail.e.currentTarget.dataset.item);
     // console.log(e.currentTarget.dataset.item)
     wx.navigateTo({
-      url: `/pages/workDetail/index?nextItem=${e.currentTarget.dataset.item}`,
+      url: `/pages/workDetail/index?nextItem=${e.detail.e.currentTarget.dataset.item}`,
     })
   },
 

@@ -8,7 +8,7 @@
         class="xz-body__list__item__img"
         wx:for="{{col1}}"
         wx:key="id"
-        bind:tap="gotoPage"
+        bind:tap="itemClick"
         data-item="{{item}}"
       >
         <view class="bottom clearfix">
@@ -27,7 +27,7 @@
         class="xz-body__list__item__img"
         wx:for="{{col2}}"
         wx:key="id"
-        bind:tap="gotoPage"
+        bind:tap="itemClick"
         data-item="{{item}}"
       >
         <!--<view class="title">{{item.title}} {{item.author}}</view>-->

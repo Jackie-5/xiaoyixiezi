@@ -113,6 +113,12 @@ Component({
         });
       }
     },
+    itemClick: function (e) {
+
+      this.triggerEvent('click', {
+        e,
+      })
+    }
   },
 
 });

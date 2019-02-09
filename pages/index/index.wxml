@@ -48,7 +48,7 @@
     </view>
   </view>
   <view wx:if="{{nowTagLeft.key === 'opus'}}" class="pinter-body">
-    <utils-pinterest id="pinterest-container" />
+    <utils-pinterest id="pinterest-container" bindclick="gotoPage" />
   </view>
 
   <view class="zj-body" wx:if="{{nowTagLeft.key === 'album'}}">
