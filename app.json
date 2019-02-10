@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/otherPage/updateVoice/index",
     "pages/index/index",
     "pages/isMy/index",
     "pages/addWork/index",
@@ -12,7 +13,8 @@
     "pages/workEnjoy/index",
 
     "pages/otherWorks/index",
-    "pages/selectFont/index"
+    "pages/selectFont/index",
+    "pages/otherPage/updatePhoto/index"
   ],
   "window":{
     "backgroundTextStyle":"dark",

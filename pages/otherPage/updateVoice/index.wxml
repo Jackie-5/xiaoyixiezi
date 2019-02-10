@@ -1,0 +1,13 @@
+<!-- index.wxml -->
+<wux-toast id="wux-toast" />
+<wux-navbar
+  prefixCls="custom-nav"
+  theme="orange"
+  bind:click="backClick"
+>
+  <wux-icon slot="left" type="ios-arrow-back" size="21" />
+  <view>语音录入</view>
+</wux-navbar>
+<view class="other-page">
+  <view></view>
+</view>

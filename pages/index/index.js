@@ -1,6 +1,6 @@
 import fetch from '../../utils/fetch';
 import requestConfig from '../../utils/config/request';
-import { $wuxToast } from '../../dist/index'
+import { $wuxToast } from '../../dist/index';
 
 const { getProduct, getAlbumList } = requestConfig.index;
 

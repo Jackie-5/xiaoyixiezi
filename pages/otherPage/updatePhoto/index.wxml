@@ -1,0 +1,40 @@
+<!-- index.wxml -->
+<wux-navbar
+  prefixCls="custom-nav"
+  theme="orange"
+  bind:click="backClick"
+>
+  <wux-icon slot="left" type="ios-arrow-back" size="21" />
+  <view>上传图片</view>
+</wux-navbar>
+<view class="other-page">
+  <wux-cell-group title="请选择一张图片上传">
+    <wux-cell hover-class="none">
+      <wux-upload
+        prefixCls="other-upload"
+        listType="picture-card"
+        max="1"
+        url="https://www.skyvow.cn/api/common/file"
+        bind:change="onChange"
+        bind:success="onSuccess"
+        bind:fail="onFail"
+        bind:complete="onComplete"
+        bind:preview="onPreview"
+        controlled
+        fileList="{{ fileList }}"
+      >
+        <view class="icon">
+          <view class="iconfont icon-jiahao"></view>
+        </view>
+      </wux-upload>
+      <view class="flex-btn" wx:if="{{ fileList.length > 0 }}">
+        <view class="flex" style="margin-right: 10px" bind:tap="onRemove">
+          <wux-button block type="stable">删除图片</wux-button>
+        </view>
+        <view class="flex">
+          <wux-button block type="orange">提交</wux-button>
+        </view>
+      </view>
+    </wux-cell>
+  </wux-cell-group>
+</view>

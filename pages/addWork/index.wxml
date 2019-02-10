@@ -39,48 +39,13 @@
             block
             type="stable"
             prefixCls="card-button"
-            wx:if="{{ item.key === 'updateImg' }}"
-          >
-            <wux-upload
-              url="https://www.skyvow.cn/api/common/file"
-              bind:change="onChange"
-              bind:success="onSuccess"
-              bind:fail="onFail"
-              bind:complete="onComplete"
-            >
-              <view class="iconfont {{ item.icon }}"></view>
-              <view class="text">{{item.label}}</view>
-            </wux-upload>
-          </wux-button>
-
-          <wux-button
-            block
-            type="stable"
-            prefixCls="card-button"
-            wx:if="{{ item.key === 'uploadVideo' }}"
-          >
-            <wux-upload
-              url="https://www.skyvow.cn/api/common/file"
-              bind:change="onChange"
-              bind:success="onSuccess"
-              bind:fail="onFail"
-              bind:complete="onComplete"
-              defaultFileType="video"
-            >
-              <view class="iconfont {{ item.icon }}"></view>
-              <view class="text">{{item.label}}</view>
-            </wux-upload>
-          </wux-button>
-
-          <wux-button
-            block
-            type="stable"
-            prefixCls="card-button"
-            wx:if="{{ item.key !== 'updateImg' && item.key !== 'uploadVideo' }}"
+            bind:tap="otherClick"
+            data-item="{{ item }}"
           >
             <view class="iconfont {{ item.icon }}"></view>
             <view class="text">{{item.label}}</view>
           </wux-button>
+
         </view>
 
       </view>
