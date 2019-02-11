@@ -1,13 +1,9 @@
 {
   "usingComponents": {
-    "wux-cell-group": "../../../dist/cell-group/index",
-    "wux-cell": "../../../dist/cell/index",
-    "wux-icon": "../../../dist/icon/index",
-    "wux-input": "../../../dist/input/index",
-    "wux-button": "../../../dist/button/index",
-    "wux-upload": "../../../dist/upload/index",
     "wux-navbar": "../../../dist/navbar/index",
-    "wux-toast": "../../../dist/toast/index"
+    "wux-toast": "../../../dist/toast/index",
+    "wux-row": "../../../dist/row/index",
+    "wux-col": "../../../dist/col/index"
   },
   "enablePullDownRefresh": false
 }

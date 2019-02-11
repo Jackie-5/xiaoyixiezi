@@ -1,5 +1,5 @@
 const prefix = [];
 
 module.exports = {
-    prefix,
+  prefix,
 }

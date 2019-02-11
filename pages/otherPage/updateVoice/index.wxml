@@ -9,5 +9,46 @@
   <view>语音录入</view>
 </wux-navbar>
 <view class="other-page">
-  <view></view>
+  <view class="other-fixed">
+    <wux-row>
+      <wux-col span="4">
+        <view class="row__btn">
+          <view
+            class="text"
+            style="text-align: right; margin-left:50%"
+            bind:tap="voiceRestart"
+          >
+            重录
+          </view>
+        </view>
+      </wux-col>
+      <wux-col span="4">
+        <view
+          class="row__btn voice-icon"
+          bind:tap="voiceBegin"
+        >
+          <view wx:if="{{ !beginVoice }}" class="iconfont icon-maikefeng-kong"></view>
+          <view wx:if="{{ beginVoice }}" class="iconfont icon-maikefeng-shi icon-color"></view>
+          <view class="number">00:00</view>
+        </view>
+      </wux-col>
+      <wux-col span="4">
+        <view class="row__btn text">
+          <view
+            class="text"
+            style="text-align: left; margin-right:50%"
+            bind:tap="voiceDone"
+          >
+            完成
+          </view>
+        </view>
+      </wux-col>
+    </wux-row>
+    <canvas
+      style="width: {{ canvasWidth }}px; height: {{ canvasHeight }}px;"
+      canvas-id="canvas-container"
+      disable-scroll="true"
+      class="canvas-box"
+    />
+  </view>
 </view>
